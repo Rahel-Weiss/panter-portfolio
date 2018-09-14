@@ -1,0 +1,99 @@
+Title: Contact
+
+----
+
+Text: 
+
+## Follow the Kirby Team on Twitter
+
+Kirby
+(twitter: @getkirby)
+
+Bastian
+(twitter: @bastianallgeier)
+
+Nico
+(twitter: @distantnative)
+
+Sascha
+(twitter: @sashtown)
+
+Sonja
+(twitter: @texnixe)
+
+Lukas
+(twitter: @lukasbestle)
+
+Fabian
+(twitter: @fabianmichael)
+
+----
+
+Intro: This contact page does not only contain useful resources that help you to get the most out of Kirby, but also demonstrates how to use the <mark>Structure field</mark> to create repeating content like the boxes below. If your repeating content is very complex and/or consists of more than only a few items, you can use subpages to store your data instead, like demonstrated on the (link: /about text: About page).
+
+----
+
+Contactoptions: 
+
+- 
+  title: Contact
+  text: >
+    Feel free to drop us a line if you
+    have any questions.
+  url: mailto:support@getkirby.com
+  linktext: Write an email
+  icon: contact.svg
+- 
+  title: Forum
+  text: >
+    Join the Kirby community and connect
+    with others.
+  url: https://forum.getkirby.com/
+  linktext: Visit Kirby’s forum
+  icon: forum.svg
+- 
+  title: GitHub
+  text: >
+    Report Kirby-related issues directly on
+    GitHub.
+  url: https://github.com/getkirby
+  linktext: Kirby on GitHub
+  icon: github.svg
+- 
+  title: Docs
+  text: "Check out Kirby's detailed tutorials and instructions."
+  url: https://getkirby.com/docs
+  linktext: Documentation
+  icon: docs.svg
+
+----
+
+Pictures: 
+
+- 1c9acb29ece3c2ac432eadbabed9f2c7.jpg
+- 4fe97e265c70448611f426c0e1c3b716.jpg
+- 9f5e8ceb96be7d5469acf859af11b1ae.jpg
+
+----
+
+Gallery: 
+
+----
+
+Gallery-image: 
+
+----
+
+Client: 
+
+----
+
+Brief: 
+
+----
+
+Fields: 
+
+----
+
+Caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

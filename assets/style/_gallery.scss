@@ -1,0 +1,17 @@
+.gallery-wrapper {
+  background-color: 4a4a4a;
+  grid-area: 2 / 3 / 3 / last-line;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.gallery-wrapper img {
+  max-width: 100%;
+}
+
+.gallery-wrapper ul {
+  list-style-type: none;
+  padding-left: 0;
+}

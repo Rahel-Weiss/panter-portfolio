@@ -1,0 +1,3 @@
+[submodule "site/fields/gallery"]
+	path = site/fields/gallery
+	url = https://github.com/TimOetting/kirby-gallery.git

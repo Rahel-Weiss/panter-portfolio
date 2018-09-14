@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: $light-gray;
+  // outline: 10px solid orange;
+  // outline-offset: -10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: $column-width $column-width $column-width $column-width $column-width;
+  grid-template-rows: $header-height 80% $footer-height;
+  // outline: 10px solid plum;
+  // outline-offset: -10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}

@@ -1,0 +1,19 @@
+title: Contact
+
+pages: false
+
+options:
+  delete: false
+  status: false
+
+files:
+  sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: textarea
+
+fields:
+  pictures:
+    label: Gallery
+    type: gallery

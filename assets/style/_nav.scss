@@ -1,0 +1,9 @@
+.header-wrapper {
+  background-color: transparent;
+  grid-area: 1 / 1 / 2 / last-line;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 1;
+}

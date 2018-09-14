@@ -1,0 +1,40 @@
+title: Home
+
+deletable: false
+
+files:
+  sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: text
+    visible:
+      label: Show
+      type: checkbox
+      text: In Gallery
+      default: true
+
+pages: false
+
+# fields:
+#   pictures:
+#     label: Gallery
+#     type: gallery
+#     aspectRatio: 1:1
+#     displayFilename: false
+
+fields:
+  gallery:
+    label: Gallery
+    type: structure
+    width: 1/3
+    entry: >
+      <img src="{{gallery_image}}"><br />
+       <p>{{gallery_image_caption}}</p>
+    fields:
+      gallery_image:
+        label: Image
+        type: image
+      gallery_image_caption:
+        label: Caption
+        type: textArea
