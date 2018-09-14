@@ -25,10 +25,15 @@
 body {
   font-family: "AvenirNext_Regular", "helvetica", sans-serif;
   font-size: 16px;
+  line-height: 1.5em;
 }
 
 h5 {
   text-transform: uppercase;
   font-family: "AvenirNext_Bold", "helvetica", sans-serif;
   font-size: 1.2em;
+}
+
+a {
+  color: orange;
 }
