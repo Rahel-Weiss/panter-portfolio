@@ -1,14 +1,19 @@
+// Drawer Transitition duration
+
+$transition-speed: 500ms;
+
 .gallery-wrapper {
   background-color: #fff;
-  overflow-y: auto;
-  overflow-x: hidden;
+  // overflow-y: auto;
+  overflow: hidden;
   position: relative;
   padding-top: $header-height;
-  padding-top: $footer-height;
+  padding-bottom: $footer-height;
   top: 0;
   right: 0;
   width: 50%;
   transition: width $transition-speed linear;
+  display: flex;
 }
 
 .gallery-wrapper img {
@@ -18,6 +23,12 @@
 .gallery {
   padding: 0 50px;
   margin: 0 auto;
+  height: 75%;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
 }
 
 .closed-drawer .gallery-wrapper {

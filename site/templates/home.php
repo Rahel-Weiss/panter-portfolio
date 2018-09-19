@@ -50,11 +50,12 @@ There are many variations of passages of Lorem Ipsum available, but the majority
   <section class="thumbnails">
     <?php snippet('thumbnails') ?>
   </section>
-  
-</div>
-<div class="footer-wrapper" ">
+  <div class="footer-wrapper" ">
     <?php snippet('footer') ?>
 </div>
+  
+</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/build/script.min.js"></script>

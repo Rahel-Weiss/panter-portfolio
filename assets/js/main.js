@@ -24,3 +24,12 @@ scrollLink.click(function(e) {
     1000
   );
 });
+
+// Go to Full Screen
+
+const downArrow = document.getElementById("arrow");
+const mainContent = document.getElementById("main-content");
+
+downArrow.onclick = function() {
+  mainContent.classList.toggle("fullscreen");
+};
