@@ -59,7 +59,7 @@ gulp.task("script", function() {
   return gulp
     .src("assets/js/*.js")
     .pipe(concat("script.min.js"))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("assets/build"));
 });
 
 // Clean output directory

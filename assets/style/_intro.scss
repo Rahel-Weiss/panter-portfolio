@@ -1,0 +1,283 @@
+.div-section-intro {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  justify-content: start;
+  align-items: center;
+  background-color: $dark-gray;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: transparent;
+  margin: 0 auto;
+}
+
+.div-section-intro p {
+  font-size: 0.5rem;
+  letter-spacing: 0.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.div-section-intro h1 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.background-square {
+  background-color: $light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  animation: drawer 1s ease-in-out;
+  animation-delay: 1s;
+  overflow: hidden;
+  position: absolute;
+}
+
+.name-and-arrow {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 0;
+  position: relative;
+  background-color: transparent;
+  width: 100vw;
+  max-width: 800px;
+}
+
+.name-div {
+  display: flex;
+  justify-content: start;
+}
+
+.name-circle {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  color: $light-gray;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* for consecutive intro animations */
+.name-circle__consecutive_animate {
+  animation: changeColorToLight 001ms;
+  animation-delay: 4s;
+}
+
+.name-circle:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.name-circle:first-child {
+  animation: changeColorToGrey 500ms;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.name-circle:last-child {
+  animation: grow 0s, fade 500ms, changeColorToGrey 500ms;
+  animation-timing-function: linear, linear;
+  animation-delay: 2s, 2500ms, 3500ms;
+  animation-fill-mode: forwards;
+}
+
+h1.name {
+  display: inline;
+
+  color: inherit;
+}
+
+.arrow-box {
+  display: block;
+  padding-bottom: 0%;
+  position: relative;
+}
+
+.arrow {
+  animation: visable 2500ms infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 150px;
+}
+
+.point {
+  height: 50px;
+  width: 50px;
+  border-left: 1px solid $black;
+  border-bottom: 1px solid $black;
+  transform: rotate(-45deg);
+  margin: 0 auto;
+}
+
+.contact-circle {
+  background-color: $orange;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  opacity: 0;
+  animation: visable 1ms;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+  margin-top: 25px;
+  margin-bottom: 150px;
+  position: absolute;
+  right: 0;
+}
+
+/* Animation */
+
+@keyframes changeColorToLight {
+  0% {
+    color: $black;
+  }
+
+  100% {
+    color: $light-gray;
+  }
+}
+
+@keyframes visable {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    color: $light-gray;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+    opacity: 1;
+    background-color: $black;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes drawer {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+
+@keyframes changeColorToGrey {
+  0% {
+    height: 100px;
+    width: 100px;
+    color: $light-gray;
+    opacity: 0;
+    background-color: transparent;
+    color: $light-gray;
+  }
+
+  100% {
+    height: 100px;
+    width: 100px;
+    color: $black;
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .name-and-arrow {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #nav.sticky .name-and-arrow {
+    grid-template-columns: 1px 1fr;
+    position: unset;
+    animation: none;
+    padding: 0;
+    justify-content: center;
+    height: 80px;
+  }
+
+  .contact-circle {
+    opacity: 0;
+    animation: 0;
+  }
+
+  .sticky .contact-circle {
+    animation: none;
+    opacity: 1;
+    position: unset;
+  }
+
+  .sticky .arrow-box {
+    padding-left: 0;
+  }
+
+  .arrow-box {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 50px;
+  }
+
+  .name-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sticky.name-div {
+    opacity: 0;
+  }
+  .name-and-arrow {
+    margin: 0 auto;
+  }
+}

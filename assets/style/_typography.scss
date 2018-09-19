@@ -36,4 +36,11 @@ h5 {
 
 a {
   color: orange;
+  text-decoration: none;
+}
+
+a.link-small {
+  letter-spacing: 0.2em;
+  color: var(--light-gray);
+  font-size: 0.4em;
 }

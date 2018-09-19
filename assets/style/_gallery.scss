@@ -3,9 +3,11 @@
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
+  padding-top: $header-height;
   top: 0;
   right: 0;
   width: 50%;
+  transition: width $transition-speed linear;
 }
 
 .gallery-wrapper img {
@@ -13,11 +15,10 @@
 }
 
 .gallery {
-  padding: 50px;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
 .closed-drawer .gallery-wrapper {
   width: 100%;
-  background-color: red;
 }

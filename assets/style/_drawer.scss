@@ -1,21 +1,44 @@
 .drawer {
-  background-color: rgba(195, 196, 181, 0.24);
+  // background-color: rgba(195, 196, 181, 0.24);
   width: 50vw;
   height: 100vh;
-  position: relative;
-  top: -$header-height;
-  left: 0;
   padding-top: $header-height;
-  z-index: 0;
-  transition: width 1s ease-in-out;
+  transition: width 1s linear;
+  transform: translateY(-10vh);
+  background-color: $light-gray;
+  outline-offset: -5px;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+.drawer-header {
+  height: $header-height;
+  display: flex;
+  // background-color: aquamarine;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer-title {
+  // display: inline;
+}
+
+.drawer-close-icon {
+  // float: right;
+  // float: top;
 }
 
 .closed-drawer .drawer {
   width: 0px;
 }
 
+.closed-drawer .drawer-content {
+  opacity: 0;
+}
+
 .drawer-content {
-  padding: 50px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  padding: 0 50px;
+  transition: opacity 200ms linear;
+
+  // background-color: aqua;
 }
