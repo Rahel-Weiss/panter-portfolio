@@ -12,7 +12,7 @@
   width: 50%;
   transition: width 500ms ease-in-out;
   display: flex;
-  background-color: $dark-gray;
+  flex-direction: column;
 }
 
 .gallery-wrapper img {
@@ -32,4 +32,13 @@
 
 .closed-drawer .gallery-wrapper {
   width: 100vw;
+}
+
+.gallery-footer {
+  display: flex;
+  justify-content: center;
+}
+.drawer-close-icon.drawer-close-icon__text {
+  width: unset;
+  height: unset;
 }

@@ -41,6 +41,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
       <?php endforeach; ?>
       </ul>
     </div>
+    <div class="gallery-footer"><p class="drawer-close-icon drawer-close-icon__text">Read the brief</p></div>
   </section>
     <?php endif; ?>
 

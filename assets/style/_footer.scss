@@ -10,13 +10,7 @@
   z-index: 1;
   padding: 0 50px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   background-color: transparent;
-}
-
-.drawer-close-icon.drawer-close-icon__footer {
-  position: unset;
-  height: unset;
-  width: unset;
 }

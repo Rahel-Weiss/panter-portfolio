@@ -37,6 +37,15 @@ $drawer-duration: 500ms;
   opacity: 0;
 }
 
+.drawer-close-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.drawer-close-icon:hover {
+  cursor: pointer;
+}
+
 .drawer-header {
   height: $header-height;
   display: flex;
