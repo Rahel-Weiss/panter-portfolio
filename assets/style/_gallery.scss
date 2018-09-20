@@ -1,7 +1,5 @@
 // Drawer Transitition duration
 
-$transition-speed: 500ms;
-
 .gallery-wrapper {
   background-color: #fff;
   // overflow-y: auto;
@@ -12,8 +10,9 @@ $transition-speed: 500ms;
   top: 0;
   right: 0;
   width: 50%;
-  transition: width $transition-speed linear;
+  transition: width 500ms ease-in-out;
   display: flex;
+  background-color: $dark-gray;
 }
 
 .gallery-wrapper img {
@@ -32,5 +31,5 @@ $transition-speed: 500ms;
 }
 
 .closed-drawer .gallery-wrapper {
-  width: 100%;
+  width: 100vw;
 }

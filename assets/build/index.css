@@ -42,8 +42,9 @@ a{color:orange;text-decoration:none}a.link-small{letter-spacing:.2em;color:var(-
 .drawer-close-icon.drawer-close-icon__footer{position:unset;height:unset;width:unset}
 body{margin:0;padding:0}.main-content{height:100vh;width:100vw;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;position:absolute}
 .main-content.fullscreen{overflow:hidden;position:absolute;top:0;left:0;right:0;bottom:0;background-color:#fff}
-.gallery-wrapper{background-color:#fff;overflow:hidden;position:relative;padding-top:10vh;padding-bottom:10vh;top:0;right:0;width:50%;transition:width 500ms linear;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.gallery-wrapper{background-color:#fff;overflow:hidden;position:relative;padding-top:10vh;padding-bottom:10vh;top:0;right:0;width:50%;transition:width 500ms ease-in-out;display:-webkit-flex;display:-ms-flexbox;display:flex;background-color:#4a4a4a}
 .gallery-wrapper img{max-width:300px}.gallery{padding:0 50px;margin:0 auto;height:75%;width:75%;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden;display:-webkit-flex;display:-ms-flexbox;display:flex}
-.closed-drawer .gallery-wrapper{width:100%}.drawer{width:50vw;height:100vh;padding-top:10vh;transition:width 1s linear;-webkit-transform:translateY(-10vh);transform:translateY(-10vh);background-color:#f2f2f2;outline-offset:-5px;position:relative;top:0;z-index:2}
-.drawer-header{height:10vh;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-.closed-drawer .drawer{width:0}.closed-drawer .drawer-content{opacity:0}.drawer-content{padding:0 50px;transition:opacity 200ms linear}
+.closed-drawer .gallery-wrapper{width:100vw}.drawer{width:50vw;height:100vh;padding-top:10vh;-webkit-transform:translateY(-10vh);transform:translateY(-10vh);background-color:#f2f2f2;transition:width 500ms ease-in-out;outline-offset:-5px;position:relative;top:0;z-index:2}
+.drawer-content{padding:0 50px;transition:opacity 10ms linear;margin-bottom:10vh}
+.open-drawer .drawer{width:50vw}.closed-drawer .drawer{width:0}.open-drawer .drawer .drawer-content{opacity:1;transition-delay:500ms}
+.closed-drawer .drawer .drawer-content{opacity:0}.drawer-header{height:10vh;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-ms-flex-align:center;align-items:center}

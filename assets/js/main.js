@@ -1,13 +1,26 @@
 let closeIcon = document.getElementsByClassName("drawer-close-icon")[0];
 
-function closeDrawer() {
-  console.log("I'm in the function");
-  closeIcon.classList.add("closed-drawer");
-}
+// function closeDrawer() {
+//   closeIcon.classList.add("closed-drawer");
+// }
+
+$("#accountloginsignup h1").click(function() {
+  if ($("#takeonebar").hasClass("slamdown")) {
+    $("#takeonebar").removeClass("slamdown");
+  } else {
+    $("#takeonebar").addClass("slamdown");
+  }
+});
+
 $(document).ready(function() {
-  console.log("I'm in the function");
   $(".drawer-close-icon").click(function() {
-    $("#main-content").toggleClass("closed-drawer");
+    if ($("#main-content").hasClass("closed-drawer")) {
+      $("#main-content").removeClass("closed-drawer");
+      $("#main-content").addClass("open-drawer");
+    } else if ($("#main-content").hasClass("open-drawer")) {
+      $("#main-content").removeClass("open-drawer");
+      $("#main-content").addClass("closed-drawer");
+    }
   });
 });
 

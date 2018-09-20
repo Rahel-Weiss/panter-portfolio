@@ -332,8 +332,9 @@ body {
   top: 0;
   right: 0;
   width: 50%;
-  transition: width 500ms linear;
-  display: flex; }
+  transition: width 500ms ease-in-out;
+  display: flex;
+  background-color: #4a4a4a; }
 
 .gallery-wrapper img {
   max-width: 300px; }
@@ -349,32 +350,40 @@ body {
   display: flex; }
 
 .closed-drawer .gallery-wrapper {
-  width: 100%; }
+  width: 100vw; }
 
 .drawer {
   width: 50vw;
   height: 100vh;
   padding-top: 10vh;
-  transition: width 1s linear;
   transform: translateY(-10vh);
   background-color: #f2f2f2;
+  transition: width 500ms ease-in-out;
   outline-offset: -5px;
   position: relative;
   top: 0;
   z-index: 2; }
+
+.drawer-content {
+  padding: 0 50px;
+  transition: opacity 10ms linear;
+  margin-bottom: 10vh; }
+
+.open-drawer .drawer {
+  width: 50vw; }
+
+.closed-drawer .drawer {
+  width: 0px; }
+
+.open-drawer .drawer .drawer-content {
+  opacity: 1;
+  transition-delay: 500ms; }
+
+.closed-drawer .drawer .drawer-content {
+  opacity: 0; }
 
 .drawer-header {
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-
-.closed-drawer .drawer {
-  width: 0px; }
-
-.closed-drawer .drawer-content {
-  opacity: 0; }
-
-.drawer-content {
-  padding: 0 50px;
-  transition: opacity 200ms linear; }

@@ -4,13 +4,13 @@
 <?php snippet('intro') ?>
 <?php snippet('nav') ?>
 
-<div id="main-content" class="main-content">
+<div id="main-content" class="main-content open-drawer">
 
   <?php $images = $page->images()->filterBy('visible', true); ?>
   <?php if ($images->count() > 0): ?>
 
 
-  <div class="drawer">
+  <div class="drawer ">
     <div class="drawer-content">
       <section class="drawer-header">
       <h5 class="drawer-title">Brief</h5>
