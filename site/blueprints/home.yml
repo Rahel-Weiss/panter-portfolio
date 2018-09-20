@@ -27,9 +27,8 @@ fields:
   gallery:
     label: Gallery
     type: structure
-    width: 1/3
     entry: >
-      <img src="{{gallery_image}}"><br />
+      <img src={{gallery_image}><br />
        <p>{{gallery_image_caption}}</p>
     fields:
       gallery_image:

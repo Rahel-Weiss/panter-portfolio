@@ -52,4 +52,11 @@ $drawer-duration: 500ms;
   // background-color: aquamarine;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  top: 0;
+}
+
+.drawer-text {
+  overflow: auto;
+  // margin-top: $header-height;
 }

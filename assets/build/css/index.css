@@ -345,6 +345,7 @@ body {
   justify-content: center; }
 
 .drawer-close-icon.drawer-close-icon__text {
+  margin-top: 50px;
   width: unset;
   height: unset; }
 
@@ -389,4 +390,9 @@ body {
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  top: 0; }
+
+.drawer-text {
+  overflow: auto; }
