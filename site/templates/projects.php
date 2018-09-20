@@ -9,10 +9,6 @@
       </div>
       <hr />
     </header>
-      
-    <div class="wrap wide">    
-      <?php snippet('showcase') ?>
-    </div>
 
   </main>
 
