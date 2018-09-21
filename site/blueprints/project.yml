@@ -17,6 +17,9 @@ fields:
   title:
     label: Project name
     type: text
+  brief:
+    label: Project brief
+    type: textArea
   pictures:
     label: Gallery
     type: gallery

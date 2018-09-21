@@ -1,5 +1,5 @@
 <!-- Section One Intro -->
-<div class="dark div-section-intro">
+<div id="start"class="dark div-section-intro">
     <div id="background-square" class="background-square">
       <div id="nav" class="nav-wrapper">
         <div class="name-and-arrow">
@@ -14,9 +14,11 @@
             </div>
         
           <div class="arrow-box">
-            <div class="contact-circle">
-              <a class="link-small" href="mailto: mail@rahelweiss.com" class="email">contact</a>
-            </div>
+            <a class="link-small scroll email" href="#start">
+              <div class="contact-circle">
+                <p><?= $site->description()->html() ?><p>
+              </div>
+            </a>
             <div class="arrow">
             <a href="#main-content" class="scroll">
                 <div id="arrow" class="point"></div>

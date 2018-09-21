@@ -1,4 +1,4 @@
-Title: Project A
+Title: Rahels Project
 
 ----
 
@@ -21,3 +21,7 @@ Pictures:
 - >
   landscape-1426525759-hbz-dangerous-women-snapshots-p070-index.jpg
 - image-01.jpg
+
+----
+
+Brief: 

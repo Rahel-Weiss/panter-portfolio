@@ -1,17 +1,5 @@
 const closeIcon = document.getElementsByClassName("drawer-close-icon")[0];
 
-// function closeDrawer() {
-//   closeIcon.classList.add("closed-drawer");
-// }
-
-$("#accountloginsignup h1").click(function() {
-  if ($("#takeonebar").hasClass("slamdown")) {
-    $("#takeonebar").removeClass("slamdown");
-  } else {
-    $("#takeonebar").addClass("slamdown");
-  }
-});
-
 $(document).ready(function() {
   const { Gallery } = window;
   const $bus = (window.$bus = $({}));
@@ -63,10 +51,45 @@ $(document).ready(function() {
 
   // Go to Full Screen
 
-  const downArrow = document.getElementById("arrow");
-  const mainContent = document.getElementById("main-content");
+  const arrow = document.getElementById("arrow");
 
-  // downArrow.onclick = function() {
-  //   mainContent.classList.toggle("fullscreen");
-  // };
+  arrow.onclick = function() {
+    header.classList.add("sticky");
+    arrow.classList.add("clear");
+    // backgroundSquare.classList.add("sticky-background");
+    for (var i = 0; i < nameCircles.length; i++) {
+      nameCircles[i].classList.add("animation-2");
+    }
+    contactCircle.classList.add("animation-2");
+  };
 });
+
+// Sticky Header
+
+window.onscroll = function() {
+  stickyNav();
+};
+
+const header = document.getElementById("nav");
+const arrow = document.getElementById("arrow");
+const start = document.getElementById("start");
+const backgroundSquare = document.getElementById("background-square");
+const nameCircles = document.getElementsByClassName("name-circle");
+const contactCircle = document.getElementsByClassName("contact-circle")[0];
+
+const stickyOffSet = header.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset > stickyOffSet) {
+    header.classList.add("sticky");
+    arrow.classList.add("clear");
+    backgroundSquare.classList.add("sticky-background");
+    for (var i = 0; i < nameCircles.length; i++) {
+      nameCircles[i].classList.add("animation-2");
+    }
+    contactCircle.classList.add("animation-2");
+  } else {
+    header.classList.remove("sticky");
+    arrow.classList.remove("clear");
+  }
+}
