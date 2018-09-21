@@ -24,6 +24,35 @@ $(document).ready(function() {
   });
 });
 
+// Swiper
+
+var mySwiper = new Swiper(".swiper-container", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  watchOverflow: true,
+  centeredSlides: true,
+  // setWrapperSize: true,
+  // autoHeight: true,
+  centeredSlides: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination"
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar"
+  }
+});
+
 // Smooth scrolling
 
 var scrollLink = $(".scroll");

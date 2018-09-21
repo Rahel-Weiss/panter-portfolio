@@ -37,3 +37,18 @@ fields:
       gallery_image_caption:
         label: Caption
         type: textArea
+
+# fields:
+#   gallery:
+#     label: Gallery
+#     type: structure
+#     entry: >
+#       <img src={{gallery_image}><br />
+#        <p>{{gallery_image_caption}}</p>
+#     fields:
+#       gallery_image:
+#         label: Image
+#         type: image
+#       gallery_image_caption:
+#         label: Caption
+#         type: textArea
