@@ -1,0 +1,10 @@
+title: Projects
+pages: true
+files: false
+options:
+  delete: false
+  status: false
+fields:
+  title:
+    label: Title
+    type: text
