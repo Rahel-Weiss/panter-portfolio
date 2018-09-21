@@ -1,18 +1,10 @@
 // Drawer Transitition duration
 
 .gallery-wrapper {
-  background-color: #fff;
-  // overflow-y: auto;
-  overflow: hidden;
-  position: relative;
   padding-top: $header-height;
   padding-bottom: $footer-height;
-  top: 0;
-  right: 0;
   width: 50%;
   transition: width 500ms ease-in-out;
-  display: flex;
-  flex-direction: column;
 }
 
 .gallery-wrapper img {
@@ -20,7 +12,7 @@
 }
 
 .gallery {
-  height: 75%;
+  // height: 75%;
 
   justify-content: center;
   align-self: center;

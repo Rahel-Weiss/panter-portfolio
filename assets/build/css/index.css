@@ -362,23 +362,15 @@ body {
   width: 50vw; }
 
 .gallery-wrapper {
-  background-color: #fff;
-  overflow: hidden;
-  position: relative;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  top: 0;
-  right: 0;
   width: 50%;
-  transition: width 500ms ease-in-out;
-  display: flex;
-  flex-direction: column; }
+  transition: width 500ms ease-in-out; }
 
 .gallery-wrapper img {
   max-width: 300px; }
 
 .gallery {
-  height: 75%;
   justify-content: center;
   align-self: center; }
 

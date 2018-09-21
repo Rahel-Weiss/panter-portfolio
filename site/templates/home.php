@@ -52,6 +52,7 @@
   </div>
   <?php endif; ?>
   <div class="gallery-footer"><a class="drawer-close-icon drawer-close-icon__text js-read_the_brief">Read the brief</a></div>
+</section>
 
 
   
