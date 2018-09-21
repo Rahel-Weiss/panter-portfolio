@@ -1,10 +1,10 @@
 
 <?php snippet('header') ?>
 
-<?php snippet('intro') ?>
+<?php // snippet('intro') ?>
 <?php snippet('nav') ?>
 
-<div id="main-content" class="main-content closed-drawer">
+<div id="main-content" class="main-content" data-drawer="closed">
 
   <?php $images = $page->images()->filterBy('visible', true); ?>
   <?php if ($images->count() > 0): ?>
@@ -14,7 +14,7 @@
     <div class="drawer-content">
       <section class="drawer-header">
       <h5 class="drawer-title">Brief</h5>
-    <img class="drawer-close-icon"src="/portfolio/assets/images/cross.svg"  >
+      <button onclick="$bus.trigger('drawer:close')"><img class="drawer-close-icon" src="/portfolio/assets/images/cross.svg"></button>
       </section>
       <section class="drawer-text">
       <ul>
@@ -29,7 +29,7 @@
 
       Where can I get some?
       There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-    </sectio>    
+    </sectio>
 </div>
   </div>
     
@@ -42,7 +42,7 @@
       <?php endforeach; ?>
       </ul>
     </div>
-    <div class="gallery-footer"><p class="drawer-close-icon drawer-close-icon__text">Read the brief</p></div>
+    <div class="gallery-footer"><a class="drawer-close-icon drawer-close-icon__text js-read_the_brief">Read the brief</a></div>
   </section>
     <?php endif; ?>
 
@@ -53,14 +53,9 @@
     <?php snippet('thumbnails') ?>
   </section>
   <div class="footer-wrapper" ">
-    <?php snippet('footer') ?>
-</div>
+    <?php snippet('page-footer') ?>
+  </div>
   
 </div>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/build/script.min.js"></script>
-
-</body>
-</html>
+<?php snippet('footer') ?>
