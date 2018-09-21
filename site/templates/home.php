@@ -51,7 +51,7 @@
     <div class="swiper-scrollbar"></div>
   </div>
   <?php endif; ?>
-  <div class="gallery-footer"><p class="drawer-close-icon drawer-close-icon__text">Read the brief</p></div>
+  <div class="gallery-footer"><a class="drawer-close-icon drawer-close-icon__text js-read_the_brief">Read the brief</a></div>
 
 
   
