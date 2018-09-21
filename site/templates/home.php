@@ -29,15 +29,29 @@
   <section class="gallery-wrapper">
     <div class="gallery">
     
-      <ul>
-      <?php foreach($images->filterBy('visible', true) as $image): ?>
-        <li><?= $image->html(); ?></li>
-      <?php endforeach; ?>
-      </ul>
-    </div>
-    <div class="gallery-footer"><a class="drawer-close-icon drawer-close-icon__text js-read_the_brief">Read the brief</a></div>
-  </section>
-    <?php endif; ?>
+       <!-- Slider main container -->
+       <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <?php foreach($images->filterBy('visible', true) as $image): ?>
+            <div class="swiper-slide"><?= $image->html(); ?></div>
+          <?php endforeach; ?>
+        </div>
+          ...
+      </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <?php endif; ?>
+  <div class="gallery-footer"><p class="drawer-close-icon drawer-close-icon__text">Read the brief</p></div>
 
 
   
