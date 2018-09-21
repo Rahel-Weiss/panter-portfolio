@@ -5,6 +5,12 @@ Icon
 .DS_Store
 node_modules/
 
+# Generated files
+# ---------------
+
+/assets/build/*
+
+
 # Temporary files
 # ---------------
 
