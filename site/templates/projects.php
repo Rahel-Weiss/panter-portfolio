@@ -7,6 +7,8 @@
       <div class="intro text">
         <?= $page->text()->kirbytext() ?>
       </div>
+
+      <?php snippet('subnav', ['items' => $page->children()]) ?>
       <hr />
     </header>
 

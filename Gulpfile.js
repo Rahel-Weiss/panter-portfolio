@@ -7,6 +7,7 @@ const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const runSequence = require("run-sequence");
 const del = require("del");
+const babel = require("gulp-babel");
 
 // Concatinate scss into one css file
 
@@ -58,6 +59,11 @@ gulp.task("css", function() {
 gulp.task("script", function() {
   return gulp
     .src("assets/js/*.js")
+    .pipe(
+      babel({
+        presets: ["@babel/env"]
+      })
+    )
     .pipe(concat("script.min.js"))
     .pipe(gulp.dest("assets/build"));
 });

@@ -4,7 +4,6 @@ Title: Project A
 
 Pictures: 
 
-- 1000full-louise-bourgeois.jpg
 - 1c9acb29ece3c2ac432eadbabed9f2c7.jpg
 - >
   2015-04-02-1428008472-1743620-dangerousshot.jpg
@@ -21,3 +20,4 @@ Pictures:
   judy-dater_american_photographer_and_feminist.jpg
 - >
   landscape-1426525759-hbz-dangerous-women-snapshots-p070-index.jpg
+- image-01.jpg
