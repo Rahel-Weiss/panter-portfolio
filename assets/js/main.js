@@ -97,9 +97,10 @@ function stickyNav() {
 // Swiper
 var mySwiper = new Swiper(".swiper-container", {
   // Optional parameters
-  direction: "vertical",
+  direction: "horizontal",
+  // autoHeight: true,
   loop: true,
-  // centeredSlides: true,
+  centeredSlides: true,
 
   // If we need pagination
   pagination: {

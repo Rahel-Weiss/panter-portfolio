@@ -317,20 +317,6 @@ a.link-small {
   justify-content: flex-end;
   padding-right: 50px; }
 
-.footer-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 10vh;
-  z-index: 1;
-  padding: 0 50px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: transparent; }
-
 body {
   margin: 0;
   padding: 0; }
@@ -364,24 +350,40 @@ body {
 .gallery-wrapper {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  width: 50%;
   transition: width 500ms ease-in-out; }
 
-.gallery-wrapper img {
-  max-width: 300px; }
+.swiper-container {
+  width: 100%;
+  height: 100%; }
 
-.gallery {
+.swiper-slide {
+  background-position: cover;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
-  align-self: center; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
 
 .gallery-footer {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  height: 10vh;
+  align-items: center; }
 
 .drawer-close-icon.drawer-close-icon__text {
-  margin-top: 50px;
   width: unset;
   height: unset; }
+
+.gallery-image {
+  max-height: 100%; }
 
 .drawer {
   width: 50vw;
@@ -399,6 +401,10 @@ body {
   padding: 0 50px;
   transition: opacity 10ms linear;
   margin-bottom: 10vh; }
+
+.drawer-content .button {
+  border: none;
+  border-style: unset; }
 
 .drawer-close-icon {
   height: 24px;

@@ -20,6 +20,10 @@
 }
 $drawer-duration: 500ms;
 
+.drawer-content .button {
+  border: none;
+  border-style: unset;
+}
 .drawer-close-icon {
   height: 24px;
   width: 24px;
