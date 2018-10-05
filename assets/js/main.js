@@ -93,15 +93,12 @@ function stickyNav() {
     arrow.classList.remove("clear");
   }
 }
-var mySwiper = document.querySelector(".swiper-container").swiper;
 
 // Swiper
-var mySwiper = new Swiper(".swiper-container", {
+var imageSwiper = new Swiper(".swiper-container", {
   // Optional parameters
-  // autoHeight: true,
   loop: true,
   centeredSlides: true,
-  spaceBetween: 700,
 
   // Navigation arrows
   navigation: {
@@ -109,3 +106,9 @@ var mySwiper = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev"
   }
 });
+
+// var captionSwiper = new Swiper(".image-swiper", {
+//   // Optional parameters
+//   loop: true,
+//   centeredSlides: true
+// });

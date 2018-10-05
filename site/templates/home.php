@@ -16,11 +16,19 @@
       <button onclick="$bus.trigger('drawer:close')"><img class="drawer-close-icon" src="/portfolio/assets/images/cross.svg"></button>
       </section>
       <section class="drawer-text">
-        <ul>
-          <?php foreach($images->filterBy('visible', true) as $image): ?>
-            <li><?= $image->caption()->html(); ?></li>
-          <?php endforeach; ?>
-        </ul>
+        <!-- Slider main container -->
+      <div class="swiper-container text-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          
+            <?php foreach($images->filterBy('visible', true) as $image): ?>
+            <div class="swiper-slide"><?= $image->caption()->html(); ?></div>
+            <?php endforeach; ?>
+          
+        </div>
+      </div>
+        
       </section>
     </div>
   </div>
@@ -28,7 +36,7 @@
   <section class="gallery-wrapper">
       
     <!-- Slider main container -->
-    <div class="swiper-container">
+    <div class="swiper-container image-swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
