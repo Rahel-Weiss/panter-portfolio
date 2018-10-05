@@ -27,7 +27,7 @@ body {
   }
   &[data-drawer="open"] {
     .drawer {
-      width: 50vw;
+      width: 35vw;
     }
 
     .drawer-content {
@@ -36,7 +36,7 @@ body {
     }
 
     .gallery-wrapper {
-      width: 50vw;
+      width: 65vw;
     }
   }
 }

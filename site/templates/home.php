@@ -3,7 +3,7 @@
 <?php snippet('intro') ?>
 <?php snippet('nav') ?>
 
-<div id="main-content" class="main-content" data-drawer="closed">
+<main id="main-content" class="main-content" data-drawer="closed">
 
   <?php $images = $page->images()->filterBy('visible', true); ?>
   <?php if ($images->count() > 0): ?>
@@ -50,7 +50,7 @@
 
  
   
-</div>
+</main>
 
 
 <?php snippet('footer') ?>

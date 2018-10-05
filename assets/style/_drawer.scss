@@ -1,6 +1,5 @@
 .drawer {
-  // background-color: rgba(195, 196, 181, 0.24);
-  width: 50vw;
+  width: 35vw;
   height: 100vh;
   padding-top: $header-height;
   transform: translateY(-10vh);
@@ -16,7 +15,6 @@
   padding: 0 50px;
   transition: opacity 10ms linear;
   margin-bottom: $footer-height;
-  // background-color: aqua;
 }
 $drawer-duration: 500ms;
 
@@ -46,4 +44,13 @@ $drawer-duration: 500ms;
 .drawer-text {
   overflow: auto;
   // margin-top: $header-height;
+}
+
+.drawer button {
+  background-color: transparent;
+  border: none;
+}
+
+.drawer button:focus {
+  outline: none;
 }

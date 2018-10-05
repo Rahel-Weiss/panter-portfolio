@@ -4,20 +4,25 @@
   padding-top: $header-height;
   padding-bottom: $footer-height;
   transition: width 500ms ease-in-out;
-  // position: unset;
-  // outline: solid 20px blueviolet;
-  // outline-offset: -20px;
+  // background-color: antiquewhite;
+  // outline: solid 10px yellow;
+  // outline-offset: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .swiper-container {
-  width: 100%;
-  height: 100%;
-  // outline: solid 20px red;
-  // outline-offset: -20px;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  // outline: solid 10px orange;
+}
+
+.swiper-wrapper {
+  // background-color: aquamarine;
 }
 .swiper-slide {
-  background-position: cover;
-  // background: antiquewhite;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +41,6 @@
 .gallery-footer {
   display: flex;
   justify-content: center;
-  // background-color: beige;
   height: 10vh;
   align-items: center;
 }
@@ -46,6 +50,5 @@
 }
 
 .gallery-image {
-  max-height: 100%;
-  // max-width: 100%;
+  height: 100%;
 }
