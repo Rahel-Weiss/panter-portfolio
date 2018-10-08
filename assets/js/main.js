@@ -107,8 +107,8 @@ var imageSwiper = new Swiper(".swiper-container", {
   }
 });
 
-// var captionSwiper = new Swiper(".image-swiper", {
-//   // Optional parameters
-//   loop: true,
-//   centeredSlides: true
-// });
+var captionSwiper = new Swiper(".image-swiper", {
+  // Optional parameters
+  loop: true,
+  centeredSlides: true
+});
