@@ -4,7 +4,6 @@ pages: false
 
 options:
   delete: false
-  status: false
 
 files:
   sortable: true
@@ -20,6 +19,3 @@ fields:
   brief:
     label: Project brief
     type: textArea
-  pictures:
-    label: Gallery
-    type: gallery

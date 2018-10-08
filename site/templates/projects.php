@@ -3,12 +3,17 @@
   <main class="main" role="main">
 
     <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
-      <div class="intro text">
-        <?= $page->text()->kirbytext() ?>
-      </div>
 
-      <?php snippet('subnav', ['items' => $page->children()]) ?>
+      <?php $projects = $page->children()->visible(); ?>
+      
+      <?php foreach ($projects as $project): ?>
+      
+        <?php snippet('project', ['page' => $project]); ?>
+  
+       
+        
+      <?php endforeach; ?>
+
       <hr />
     </header>
 
