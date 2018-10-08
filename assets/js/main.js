@@ -95,7 +95,8 @@ function stickyNav() {
 }
 
 // Swiper
-var imageSwiper = new Swiper(".swiper-container", {
+
+var captionSwiper = new Swiper(".swiper-container", {
   // Optional parameters
   loop: true,
   centeredSlides: true,
@@ -107,8 +108,14 @@ var imageSwiper = new Swiper(".swiper-container", {
   }
 });
 
-var captionSwiper = new Swiper(".image-swiper", {
+var imageSwiper = new Swiper(".swiper-container", {
   // Optional parameters
   loop: true,
-  centeredSlides: true
+  centeredSlides: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
 });
