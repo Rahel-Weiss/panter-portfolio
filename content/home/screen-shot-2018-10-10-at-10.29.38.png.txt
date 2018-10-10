@@ -1,0 +1,13 @@
+Title: Link.box
+
+----
+
+Caption: This is the brief for Link.box
+
+----
+
+Visible: 1
+
+----
+
+Sort: 1

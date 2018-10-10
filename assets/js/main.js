@@ -62,6 +62,41 @@ $(document).ready(function() {
     }
     contactCircle.classList.add("animation-2");
   };
+
+  // Swiper
+  var imageSwiper = new Swiper(".image-swiper ", {
+    // Optional parameters
+    loop: true,
+    centeredSlides: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination"
+    }
+  });
+
+  var captionSwiper = new Swiper(".text-swiper", {
+    // Optional parameters
+    loop: true,
+    centeredSlides: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+
+  setTimeout(function() {
+    captionSwiper.update();
+  }, 3000);
+
+  // captionSwiper.params.control = imageSwiper;
+  // imageSwiper.params.control = captionSwiper;
 });
 
 // Sticky Header
@@ -93,29 +128,3 @@ function stickyNav() {
     arrow.classList.remove("clear");
   }
 }
-
-// Swiper
-
-var captionSwiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  loop: true,
-  centeredSlides: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
-
-var imageSwiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  loop: true,
-  centeredSlides: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});

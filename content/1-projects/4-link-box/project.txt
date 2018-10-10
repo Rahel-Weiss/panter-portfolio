@@ -1,0 +1,5 @@
+Title: Link.box
+
+----
+
+Brief: I'm the Link.box brief
