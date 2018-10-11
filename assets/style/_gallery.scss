@@ -1,23 +1,26 @@
-// Drawer Transitition duration
-
 .gallery-wrapper {
   padding-top: $header-height;
   padding-bottom: $footer-height;
   transition: width 500ms ease-in-out;
-  // position: unset;
-  // outline: solid 20px blueviolet;
-  // outline-offset: -20px;
+  // background-color: antiquewhite;
+  // outline: solid 10px yellow;
+  // outline-offset: -10px;
+  justify-content: center;
 }
 
 .swiper-container {
   width: 100%;
   height: 100%;
-  // outline: solid 20px red;
-  // outline-offset: -20px;
+
+  // outline: solid 10px orange;
+  // outline-offset: -10px;
 }
-.swiper-slide {
-  background-position: cover;
-  // background: antiquewhite;
+
+.image-swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.image-swiper .swiper-slide {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,12 +34,15 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  outline: solid 10px purple;
+  outline-offset: -20px;
+  // height: 100%;
+  // width: 100%;
 }
 
 .gallery-footer {
   display: flex;
   justify-content: center;
-  // background-color: beige;
   height: 10vh;
   align-items: center;
 }
@@ -47,5 +53,5 @@
 
 .gallery-image {
   max-height: 100%;
-  // max-width: 100%;
+  object-fit: scale-down;
 }

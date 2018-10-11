@@ -1,9 +1,9 @@
 title: Projects
-pages: true
+pages:
+  template: project
 files: false
 options:
   delete: false
-  status: false
 fields:
   title:
     label: Title

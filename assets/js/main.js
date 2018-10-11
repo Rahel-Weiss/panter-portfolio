@@ -23,6 +23,7 @@ $(document).ready(function() {
   $bus
     .on("drawer:toggle", () => {
       toggleDrawer();
+      imageSwiper.update();
     })
     .on("drawer:open", () => {
       toggleDrawer(true);
@@ -33,6 +34,10 @@ $(document).ready(function() {
 
   $readTheBrief.on("click", () => {
     $bus.trigger("drawer:toggle");
+    imageSwiper.update();
+    captionSwiper.update(function() {
+      console.log("Boo");
+    });
   });
 
   // Smooth scrolling
@@ -62,6 +67,57 @@ $(document).ready(function() {
     }
     contactCircle.classList.add("animation-2");
   };
+
+  // Swiper
+
+  var captionSwiper = new Swiper(".text-swiper", {
+    // Optional parameters
+    loop: true,
+    centeredSlides: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+
+  // var $imageData = $(".image-swiper .swiper-slide-active").attr(
+  //   "data-project-name"
+  // );
+  // var $textData = $(".text-swiper .swiper-slide-active").attr("data-drawer");
+
+  var imageSwiper = new Swiper(".image-swiper ", {
+    // Optional parameters
+    loop: true,
+    centeredSlides: true,
+    innit: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination"
+    },
+
+    on: {
+      slideNextTransitionStart: function() {
+        // if ($imageData !== $textData) {
+        captionSwiper.slideNext();
+        // }
+      },
+      slidePrevTransitionStart: function() {
+        // if ($imageData !== $textData) {
+        captionSwiper.slidePrev();
+        // }
+      }
+    }
+  });
+  // setTimeout(function() {
+  //   captionSwiper.update();
+  // }, 3000);
 });
 
 // Sticky Header
@@ -93,28 +149,3 @@ function stickyNav() {
     arrow.classList.remove("clear");
   }
 }
-
-// Swiper
-var mySwiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  direction: "horizontal",
-  // autoHeight: true,
-  loop: true,
-  centeredSlides: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination"
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar"
-  }
-});

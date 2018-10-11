@@ -19,6 +19,7 @@ var_dump($page->gallery());
     </header>
     
     <div class="text wrap">
+      
       <?= $page->text()->kirbytext() ?>
 
       <?php
