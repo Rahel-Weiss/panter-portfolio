@@ -95,18 +95,24 @@ $(document).ready(function() {
           "projectTitle"
         );
 
-        console.log(imageData, textData);
-
         if (imageData !== textData) {
-          console.log("its not the same");
           captionSwiper.slideNext();
         } else {
           console.log("its the same");
         }
       },
       slidePrevTransitionStart: function() {
+        var imageData = $(".image-swiper .swiper-slide-active").data(
+          "projectName"
+        );
+        var textData = $(".text-swiper .swiper-slide-active").data(
+          "projectTitle"
+        );
+
         if (imageData !== textData) {
           captionSwiper.slidePrev();
+        } else {
+          console.log("its the same");
         }
       }
     }

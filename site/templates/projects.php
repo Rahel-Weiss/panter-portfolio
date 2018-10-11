@@ -21,11 +21,13 @@
             <?php foreach ($projects as $project): ?>
               <div class="swiper-slide" data-project-title="<?= $project->title() ?>">
                 <h1><?= $project->title()->html() ?></h1>
-                <p><?= $project->brief()->html() ?></p>    
-                <?php $tags = $project->tags()->pluck('tags', ',', true)?> 
-                  <?php foreach ($tags as $tag): ?>
-                    <div class="tag-box"><p><?= html($tag) ?></p></div>
-                  <?php endforeach; ?>  
+                <p><?= $project->brief()->html() ?></p> 
+                <div class="tags-container">   
+                  <?php $tags = $project->tags()->pluck('tags', ',', true)?> 
+                    <?php foreach ($tags as $tag): ?>
+                      <div class="tag-box"><p><?= html($tag) ?></p></div>
+                    <?php endforeach; ?>  
+                </div>
               </div>
             <?php endforeach; ?>  
             

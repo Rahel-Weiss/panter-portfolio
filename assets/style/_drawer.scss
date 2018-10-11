@@ -44,12 +44,14 @@ $drawer-duration: 500ms;
 .text-swiper .swiper-slide {
   height: 100%;
   width: 100%;
-  // background-color: aquamarine;
+  // background-color: cadetblue;
 }
 
 .drawer-text {
   overflow: auto;
   width: calc(35vw - 2 * 50px);
+  height: 100%;
+
   // margin-top: $header-height;
 }
 
@@ -62,6 +64,10 @@ $drawer-duration: 500ms;
   outline: none;
 }
 
+.tags-container {
+  margin-top: 20%;
+}
+
 .tag-box {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -70,4 +76,7 @@ $drawer-duration: 500ms;
   padding: 0px 10px;
   display: inline-block;
   font-size: 0.7em;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  transition: all $drawer-duration;
 }
