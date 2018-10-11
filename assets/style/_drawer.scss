@@ -42,8 +42,8 @@ $drawer-duration: 500ms;
 }
 
 .text-swiper .swiper-slide {
-  outline: solid 10px purple;
-  outline-offset: -20px;
+  // outline: solid 10px purple;
+  // outline-offset: -20px;
 }
 
 .drawer-text {
@@ -59,4 +59,14 @@ $drawer-duration: 500ms;
 
 .drawer button:focus {
   outline: none;
+}
+
+.tag-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  width: fit-content;
+  padding: 0px 20px;
+  display: inline-block;
+  font-size: 0.7em;
 }

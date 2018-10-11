@@ -58,5 +58,5 @@ body{margin:0;padding:0}.main-content{height:100vh;width:100vw;display:-webkit-f
 .drawer-content{padding:0 50px;transition:opacity 10ms linear;margin-bottom:10vh}
 .drawer-content .button{border:0;border-style:unset}.drawer-close-icon{height:24px;width:24px}
 .drawer-close-icon:hover{cursor:pointer}.drawer-header{height:10vh;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:relative;top:0}
-.text-swiper .swiper-slide{outline:solid 10px purple;outline-offset:-20px}.drawer-text{overflow:auto;width:calc(35vw - 2 * 50px)}
-.drawer button{background-color:transparent;border:0}.drawer button:focus{outline:0}
+.drawer-text{overflow:auto;width:calc(35vw - 2 * 50px)}.drawer button{background-color:transparent;border:0}
+.drawer button:focus{outline:0}.tag-box{background-color:rgba(0,0,0,0.5);color:white;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;padding:0 20px;display:inline-block;font-size:.7em}

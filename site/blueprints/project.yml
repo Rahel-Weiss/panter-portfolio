@@ -19,3 +19,7 @@ fields:
   brief:
     label: Project brief
     type: textArea
+  tags:
+    label: Tags
+    type: tags
+    lower: true

@@ -22,8 +22,13 @@
               <div class="swiper-slide" data-caption-project-title="<?= $project->title() ?>">
                 <h5><?= $project->title()->html() ?></h5>
                 <p><?= $project->brief()->html() ?></p>
+                
+                <?php $tags = $project->tags()->pluck('tags', ',', true)?> 
+                  <?php foreach ($tags as $tag): ?>
+                    <div class="tag-box"><p><?= html($tag) ?></p></div>
+                  <?php endforeach; ?>  
               </div>
-              <?php endforeach; ?>  
+            <?php endforeach; ?>  
             
           </div>
          <!-- If we need navigation buttons -->
@@ -41,17 +46,16 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <?php foreach ($projects as $project): ?>
-        <?php snippet('project', ['page' => $project]); ?>
-
-      <?php endforeach; ?>
+          <?php snippet('project', ['page' => $project]); ?>
+        <?php endforeach; ?>
       </div>
        <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
+      <div class="swiper-pagination"></div>
     </div>
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    <?php endif; ?>
+  <?php endif; ?>
    
     <div class="gallery-footer"><a class="drawer-close-icon drawer-close-icon__text js-read_the_brief"><h5>Read the brief</h5></a></div>
   </section>
