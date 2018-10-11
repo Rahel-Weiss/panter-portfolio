@@ -357,11 +357,11 @@ body {
   width: 100%;
   height: 100%; }
 
-.swiper-wrapper {
+.image-swiper .swiper-wrapper {
   width: 100%;
   height: 100%; }
 
-.swiper-slide {
+.image-swiper .swiper-slide {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,7 +374,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center; }
+  align-items: center;
+  outline: solid 10px purple;
+  outline-offset: -20px; }
 
 .gallery-footer {
   display: flex;
@@ -426,8 +428,13 @@ body {
   position: relative;
   top: 0; }
 
+.text-swiper .swiper-slide {
+  outline: solid 10px purple;
+  outline-offset: -20px; }
+
 .drawer-text {
-  overflow: auto; }
+  overflow: auto;
+  width: calc(35vw - 2 * 50px); }
 
 .drawer button {
   background-color: transparent;

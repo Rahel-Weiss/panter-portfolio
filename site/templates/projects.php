@@ -19,16 +19,16 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <?php foreach ($projects as $project): ?>
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-caption-project-title="<?= $project->title() ?>">
                 <h5><?= $project->title()->html() ?></h5>
                 <p><?= $project->brief()->html() ?></p>
               </div>
               <?php endforeach; ?>  
             
           </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+         <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
         </div>
       </section>
     </div>

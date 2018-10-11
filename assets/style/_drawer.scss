@@ -41,8 +41,14 @@ $drawer-duration: 500ms;
   top: 0;
 }
 
+.text-swiper .swiper-slide {
+  outline: solid 10px purple;
+  outline-offset: -20px;
+}
+
 .drawer-text {
   overflow: auto;
+  width: calc(35vw - 2 * 50px);
   // margin-top: $header-height;
 }
 

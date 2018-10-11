@@ -16,13 +16,11 @@
   // outline-offset: -10px;
 }
 
-.swiper-wrapper {
+.image-swiper .swiper-wrapper {
   width: 100%;
   height: 100%;
-  // outline: solid 10px purple;
-  // outline-offset: -20px;
 }
-.swiper-slide {
+.image-swiper .swiper-slide {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +34,10 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  // background-color: rgb(7, 35, 61);
+  outline: solid 10px purple;
+  outline-offset: -20px;
+  // height: 100%;
+  // width: 100%;
 }
 
 .gallery-footer {

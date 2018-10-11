@@ -23,6 +23,7 @@ $(document).ready(function() {
   $bus
     .on("drawer:toggle", () => {
       toggleDrawer();
+      imageSwiper.update();
     })
     .on("drawer:open", () => {
       toggleDrawer(true);
@@ -33,6 +34,10 @@ $(document).ready(function() {
 
   $readTheBrief.on("click", () => {
     $bus.trigger("drawer:toggle");
+    imageSwiper.update();
+    captionSwiper.update(function() {
+      console.log("Boo");
+    });
   });
 
   // Smooth scrolling
@@ -64,20 +69,6 @@ $(document).ready(function() {
   };
 
   // Swiper
-  var imageSwiper = new Swiper(".image-swiper ", {
-    // Optional parameters
-    loop: true,
-    centeredSlides: true,
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-      el: ".swiper-pagination"
-    }
-  });
 
   var captionSwiper = new Swiper(".text-swiper", {
     // Optional parameters
@@ -91,12 +82,42 @@ $(document).ready(function() {
     }
   });
 
-  setTimeout(function() {
-    captionSwiper.update();
-  }, 3000);
+  // var $imageData = $(".image-swiper .swiper-slide-active").attr(
+  //   "data-project-name"
+  // );
+  // var $textData = $(".text-swiper .swiper-slide-active").attr("data-drawer");
 
-  // captionSwiper.params.control = imageSwiper;
-  // imageSwiper.params.control = captionSwiper;
+  var imageSwiper = new Swiper(".image-swiper ", {
+    // Optional parameters
+    loop: true,
+    centeredSlides: true,
+    innit: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination"
+    },
+
+    on: {
+      slideNextTransitionStart: function() {
+        // if ($imageData !== $textData) {
+        captionSwiper.slideNext();
+        // }
+      },
+      slidePrevTransitionStart: function() {
+        // if ($imageData !== $textData) {
+        captionSwiper.slidePrev();
+        // }
+      }
+    }
+  });
+  // setTimeout(function() {
+  //   captionSwiper.update();
+  // }, 3000);
 });
 
 // Sticky Header

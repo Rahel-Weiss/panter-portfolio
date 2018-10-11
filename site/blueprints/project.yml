@@ -3,7 +3,7 @@ title: Project
 pages: false
 
 options:
-  delete: false
+  delete: true
 
 files:
   sortable: true
