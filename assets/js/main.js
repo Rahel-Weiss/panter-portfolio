@@ -8,16 +8,9 @@ $(document).ready(function() {
 
   const toggleDrawer = (open = false) => {
     const drawerState = $mainContent.attr("data-drawer");
+    const newState = drawerState === "open" ? "closed" : "open";
 
-    let state = drawerState === "open" ? "closed" : "open";
-    if (state === false) {
-      state = "closed";
-    }
-    if (state === true) {
-      state = "open";
-    }
-
-    $mainContent.attr("data-drawer", state);
+    $mainContent.attr("data-drawer", newState);
   };
 
   $bus
@@ -34,10 +27,11 @@ $(document).ready(function() {
 
   $readTheBrief.on("click", () => {
     $bus.trigger("drawer:toggle");
-    imageSwiper.update();
-    captionSwiper.update(function() {
-      console.log("Boo");
-    });
+
+    setTimeout(function() {
+      imageSwiper.update();
+      captionSwiper.update();
+    }, 500);
   });
 
   // Smooth scrolling
@@ -74,18 +68,8 @@ $(document).ready(function() {
     // Optional parameters
     loop: true,
     centeredSlides: true,
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
+    allowSlideNext: true
   });
-
-  // var $imageData = $(".image-swiper .swiper-slide-active").attr(
-  //   "data-project-name"
-  // );
-  // var $textData = $(".text-swiper .swiper-slide-active").attr("data-drawer");
 
   var imageSwiper = new Swiper(".image-swiper ", {
     // Optional parameters
@@ -104,20 +88,29 @@ $(document).ready(function() {
 
     on: {
       slideNextTransitionStart: function() {
-        // if ($imageData !== $textData) {
-        captionSwiper.slideNext();
-        // }
+        var imageData = $(".image-swiper .swiper-slide-active").data(
+          "projectName"
+        );
+        var textData = $(".text-swiper .swiper-slide-active").data(
+          "projectTitle"
+        );
+
+        console.log(imageData, textData);
+
+        if (imageData !== textData) {
+          console.log("its not the same");
+          captionSwiper.slideNext();
+        } else {
+          console.log("its the same");
+        }
       },
       slidePrevTransitionStart: function() {
-        // if ($imageData !== $textData) {
-        captionSwiper.slidePrev();
-        // }
+        if (imageData !== textData) {
+          captionSwiper.slidePrev();
+        }
       }
     }
   });
-  // setTimeout(function() {
-  //   captionSwiper.update();
-  // }, 3000);
 });
 
 // Sticky Header

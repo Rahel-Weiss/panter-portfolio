@@ -34,8 +34,8 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  outline: solid 10px purple;
-  outline-offset: -20px;
+  // outline: solid 10px purple;
+  // outline-offset: -20px;
   // height: 100%;
   // width: 100%;
 }
@@ -49,9 +49,28 @@
 .drawer-close-icon.drawer-close-icon__text {
   width: unset;
   height: unset;
+  color: $black;
 }
 
 .gallery-image {
   max-height: 100%;
   object-fit: scale-down;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  fill: $black;
+}
+
+.swiper-pagination-bullet-active {
+  background: $black;
 }

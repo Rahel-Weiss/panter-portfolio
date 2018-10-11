@@ -1,9 +1,8 @@
-<!-- Section One Intro -->
+<!-- Intro -->
 <div id="start"class="dark div-section-intro">
     <div id="background-square" class="background-square">
       <div id="nav" class="nav-wrapper">
         <div class="name-and-arrow">
-          
             <div class="name-div">
               <div class="name-circle">
                 <h1 class="name bold name-rahel">Rahel</h1>
@@ -12,11 +11,10 @@
                 <h1 id="weiss" class=" bold name name-weiss">Weiss</h1>
               </div>
             </div>
-        
           <div class="arrow-box">
             <a class="link-small scroll email" href="#start">
               <div class="contact-circle">
-                <p><?= $site->description()->html() ?><p>
+                <p>Top<p>
               </div>
             </a>
             <div class="arrow">
