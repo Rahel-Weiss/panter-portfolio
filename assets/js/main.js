@@ -59,7 +59,10 @@ $(document).ready(function() {
 
   // Flickity
   var textflkty = new Flickity(".text-carousel", {
-    autoPlay: false
+    autoPlay: false,
+    prevNextButtons: false,
+    pageDots: false
+    // asNavFor: document.querySelector(".text-carousel")
   });
   var imageflkty = new Flickity(".main-carousel", {
     autoPlay: false
