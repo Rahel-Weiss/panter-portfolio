@@ -27,11 +27,6 @@ $(document).ready(function() {
 
   $readTheBrief.on("click", () => {
     $bus.trigger("drawer:toggle");
-
-    setTimeout(function() {
-      imageSwiper.update();
-      captionSwiper.update();
-    }, 500);
   });
 
   // Smooth scrolling
@@ -62,60 +57,9 @@ $(document).ready(function() {
     contactCircle.classList.add("animation-2");
   };
 
-  // Swiper
-
-  var captionSwiper = new Swiper(".text-swiper", {
-    // Optional parameters
-    loop: true,
-    centeredSlides: true,
-    allowSlideNext: true
-  });
-
-  var imageSwiper = new Swiper(".image-swiper ", {
-    // Optional parameters
-    loop: true,
-    centeredSlides: true,
-    innit: true,
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-      el: ".swiper-pagination"
-    },
-
-    on: {
-      slideNextTransitionStart: function() {
-        var imageData = $(".image-swiper .swiper-slide-active").data(
-          "projectName"
-        );
-        var textData = $(".text-swiper .swiper-slide-active").data(
-          "projectTitle"
-        );
-
-        if (imageData !== textData) {
-          captionSwiper.slideNext();
-        } else {
-          console.log("its the same");
-        }
-      },
-      slidePrevTransitionStart: function() {
-        var imageData = $(".image-swiper .swiper-slide-active").data(
-          "projectName"
-        );
-        var textData = $(".text-swiper .swiper-slide-active").data(
-          "projectTitle"
-        );
-
-        if (imageData !== textData) {
-          captionSwiper.slidePrev();
-        } else {
-          console.log("its the same");
-        }
-      }
-    }
+  // Flickity
+  var flkty = new Flickity(".main-carousel", {
+    autoPlay: false
   });
 });
 

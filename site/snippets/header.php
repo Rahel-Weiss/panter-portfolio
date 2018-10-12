@@ -8,7 +8,7 @@
   <title> <?= $site->title()->html() ?> | <?= $page->title()->html() ?> </title>
   
   <meta name="description" content="<?= $site->description()->html() ?>">
-  <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <?= css('assets/build/index.css') ?>
 
 </head>
