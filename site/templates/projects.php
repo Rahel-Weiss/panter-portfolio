@@ -1,4 +1,10 @@
 
+<?php
+
+$index = 0;
+
+?>
+
 <?php snippet('header') ?>
 <?php snippet('intro') ?>
 
@@ -16,7 +22,7 @@
 
         <div class="text-carousel carousel carousel--full-width js-flickity" data-flickity-options='{ "asNavFor": ".main-carousel" }'>
           <?php foreach ($projects as $project): ?>
-            <div project-name="<?= $project->title()->html() ?>" class="carousel-cell">
+            <div class="carousel-cell">
               <div class="carousel-slide">
                 <h1><?= $project->title()->html() ?></h1>
                 <p><?= $project->brief()->html() ?></p> 
@@ -39,7 +45,7 @@
   <section class="gallery-wrapper">   
     <div class="main-carousel carousel carousel--full-width js-flickity" >
     <?php foreach ($projects as $project): ?>
-      <?php snippet('project', ['page' => $project]); ?>
+      <?php snippet('project', ['page' => $project, 'index' => $index++]); ?>
       <?php endforeach; ?>
     </div> 
   <?php endif; ?> 
