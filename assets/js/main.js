@@ -58,7 +58,10 @@ $(document).ready(function() {
   };
 
   // Flickity
-  var flkty = new Flickity(".main-carousel", {
+  var textflkty = new Flickity(".text-carousel", {
+    autoPlay: false
+  });
+  var imageflkty = new Flickity(".main-carousel", {
     autoPlay: false
   });
 });

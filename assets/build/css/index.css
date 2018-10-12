@@ -357,11 +357,11 @@ body {
   height: 100%;
   width: 100%; }
 
-.carousel-cell {
+.main-carousel .carousel-cell {
   height: 100%;
   width: 100%; }
 
-.carousel-slide {
+.main-carousel .carousel-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -373,6 +373,18 @@ body {
   width: 75%;
   height: 75%;
   object-fit: contain; }
+
+.gallery-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.gallery-footer .drawer-close-icon {
+  height: unset;
+  width: unset; }
+
+.flickity-page-dots {
+  bottom: 0; }
 
 .drawer {
   width: 35vw;
@@ -412,8 +424,7 @@ body {
 
 .drawer-text {
   overflow: auto;
-  width: calc(35vw - 2 * 50px);
-  height: 100%; }
+  width: calc(35vw - 2 * 50px); }
 
 .drawer button {
   background-color: transparent;
@@ -421,6 +432,16 @@ body {
 
 .drawer button:focus {
   outline: none; }
+
+.text-carousel {
+  height: 100%;
+  width: 100%; }
+
+.text-carousel .carousel-slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
 
 .tags-container {
   margin-top: 20%; }

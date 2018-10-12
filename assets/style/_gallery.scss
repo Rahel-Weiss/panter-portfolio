@@ -12,12 +12,11 @@
   height: 100%;
   width: 100%;
 }
-
-.carousel-cell {
+.main-carousel .carousel-cell {
   height: 100%;
   width: 100%;
 }
-.carousel-slide {
+.main-carousel .carousel-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,4 +29,19 @@
   width: 75%;
   height: 75%;
   object-fit: contain;
+}
+
+.gallery-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-footer .drawer-close-icon {
+  height: unset;
+  width: unset;
+}
+
+.flickity-page-dots {
+  bottom: 0;
 }

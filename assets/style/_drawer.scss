@@ -44,9 +44,6 @@ $drawer-duration: 500ms;
 .drawer-text {
   overflow: auto;
   width: calc(35vw - 2 * 50px);
-  height: 100%;
-
-  // margin-top: $header-height;
 }
 
 .drawer button {
@@ -56,6 +53,18 @@ $drawer-duration: 500ms;
 
 .drawer button:focus {
   outline: none;
+}
+
+.text-carousel {
+  height: 100%;
+  width: 100%;
+}
+
+.text-carousel .carousel-slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .tags-container {
