@@ -53,8 +53,8 @@ body{margin:0;padding:0}.main-content{height:100vh;width:100vw;display:-webkit-f
 .main-carousel{height:100%;width:100%}.main-carousel .carousel-cell{height:100%;width:100%}
 .main-carousel .carousel-slide{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden;height:100%;width:100%}
 .carousel-slide img{width:75%;height:75%;object-fit:contain}.gallery-footer{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-.gallery-footer .drawer-close-icon{height:unset;width:unset}.flickity-page-dots{bottom:0}
-.drawer{width:35vw;height:100vh;padding-top:10vh;-webkit-transform:translateY(-10vh);transform:translateY(-10vh);background-color:#f2f2f2;transition:width 500ms ease-in-out;outline-offset:-5px;position:relative;top:0;z-index:2}
+.flickity-button:focus{outline:0;box-shadow:none}.gallery-footer .drawer-close-icon{height:unset;width:unset}
+.flickity-page-dots{bottom:0}.drawer{width:35vw;height:100vh;padding-top:10vh;-webkit-transform:translateY(-10vh);transform:translateY(-10vh);background-color:#f2f2f2;transition:width 500ms ease-in-out;outline-offset:-5px;position:relative;top:0;z-index:2}
 .drawer-content{padding:0 50px;transition:opacity 10ms linear;margin-bottom:10vh}
 .drawer-content .button{border:0;border-style:unset}.drawer-close-icon{height:24px;width:24px}
 .drawer-close-icon:hover{cursor:pointer}.drawer-header{height:10vh;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:relative;top:0}

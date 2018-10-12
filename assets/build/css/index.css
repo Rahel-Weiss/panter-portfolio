@@ -379,6 +379,10 @@ body {
   justify-content: center;
   align-items: center; }
 
+.flickity-button:focus {
+  outline: none;
+  box-shadow: none; }
+
 .gallery-footer .drawer-close-icon {
   height: unset;
   width: unset; }

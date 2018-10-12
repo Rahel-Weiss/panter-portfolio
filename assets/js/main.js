@@ -16,7 +16,6 @@ $(document).ready(function() {
   $bus
     .on("drawer:toggle", () => {
       toggleDrawer();
-      imageSwiper.update();
     })
     .on("drawer:open", () => {
       toggleDrawer(true);
@@ -58,15 +57,20 @@ $(document).ready(function() {
   };
 
   // Flickity
+
   var textflkty = new Flickity(".text-carousel", {
     autoPlay: false,
     prevNextButtons: false,
     pageDots: false
-    // asNavFor: document.querySelector(".text-carousel")
   });
   var imageflkty = new Flickity(".main-carousel", {
     autoPlay: false
   });
+
+  // Get the image swiper Data
+  // Get the text swiper Data
+  // When we click the advance button and if it's not the same advance if it is the same do nothing
+  // When we click on the prev button if itt's not the same do go to prev, if not do nothing.
 });
 
 // Sticky Header
