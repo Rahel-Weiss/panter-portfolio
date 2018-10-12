@@ -8,22 +8,14 @@ $(document).ready(function() {
 
   const toggleDrawer = (open = false) => {
     const drawerState = $mainContent.attr("data-drawer");
+    const newState = drawerState === "open" ? "closed" : "open";
 
-    let state = drawerState === "open" ? "closed" : "open";
-    if (state === false) {
-      state = "closed";
-    }
-    if (state === true) {
-      state = "open";
-    }
-
-    $mainContent.attr("data-drawer", state);
+    $mainContent.attr("data-drawer", newState);
   };
 
   $bus
     .on("drawer:toggle", () => {
       toggleDrawer();
-      imageSwiper.update();
     })
     .on("drawer:open", () => {
       toggleDrawer(true);
@@ -34,10 +26,6 @@ $(document).ready(function() {
 
   $readTheBrief.on("click", () => {
     $bus.trigger("drawer:toggle");
-    imageSwiper.update();
-    captionSwiper.update(function() {
-      console.log("Boo");
-    });
   });
 
   // Smooth scrolling
@@ -68,56 +56,21 @@ $(document).ready(function() {
     contactCircle.classList.add("animation-2");
   };
 
-  // Swiper
+  // Flickity
 
-  var captionSwiper = new Swiper(".text-swiper", {
-    // Optional parameters
-    loop: true,
-    centeredSlides: true,
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
+  var textflkty = new Flickity(".text-carousel", {
+    autoPlay: false,
+    prevNextButtons: false,
+    pageDots: false
+  });
+  var imageflkty = new Flickity(".main-carousel", {
+    autoPlay: false
   });
 
-  // var $imageData = $(".image-swiper .swiper-slide-active").attr(
-  //   "data-project-name"
-  // );
-  // var $textData = $(".text-swiper .swiper-slide-active").attr("data-drawer");
-
-  var imageSwiper = new Swiper(".image-swiper ", {
-    // Optional parameters
-    loop: true,
-    centeredSlides: true,
-    innit: true,
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-      el: ".swiper-pagination"
-    },
-
-    on: {
-      slideNextTransitionStart: function() {
-        // if ($imageData !== $textData) {
-        captionSwiper.slideNext();
-        // }
-      },
-      slidePrevTransitionStart: function() {
-        // if ($imageData !== $textData) {
-        captionSwiper.slidePrev();
-        // }
-      }
-    }
-  });
-  // setTimeout(function() {
-  //   captionSwiper.update();
-  // }, 3000);
+  // Get the image swiper Data
+  // Get the text swiper Data
+  // When we click the advance button and if it's not the same advance if it is the same do nothing
+  // When we click on the prev button if itt's not the same do go to prev, if not do nothing.
 });
 
 // Sticky Header
