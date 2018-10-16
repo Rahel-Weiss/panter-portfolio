@@ -2,34 +2,4 @@ title: Home
 
   deletable: false
 
-files:
-  sortable: true
-  fields:
-    title:
-      label: Project Name
-      type: text
-    caption:
-      label: Brief
-      type: textArea
-    visible:
-      label: Show
-      type: checkbox
-      text: In Gallery
-      default: true
 
-pages: false
-
-fields:
-  gallery:
-    label: Gallery
-    type: structure
-    entry: >
-      <img src={{gallery_image}><br />
-       <p>{{gallery_image_caption}}</p>
-    fields:
-      gallery_image:
-        label: Image
-        type: image
-      gallery_image_caption:
-        label: Caption
-        type: textArea

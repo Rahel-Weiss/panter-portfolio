@@ -20,7 +20,7 @@ $index = 0;
       </section>
       <section class="drawer-text">
 
-        <div class="text-carousel carousel carousel--full-width js-flickity" data-flickity-options='{ "asNavFor": ".main-carousel" }'>
+        <div class="text-carousel carousel carousel--full-width js-flickity" >
           <?php foreach ($projects as $project): ?>
             <div class="carousel-cell">
               <div class="carousel-slide">

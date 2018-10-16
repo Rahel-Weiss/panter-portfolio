@@ -67,6 +67,14 @@ $drawer-duration: 500ms;
   overflow: hidden;
 }
 
+.text-carousel .flickity-prev-next-button {
+  opacity: 0;
+}
+
+.text-carousel .flickity-page-dots {
+  opacity: 0;
+}
+
 .tags-container {
   margin-top: 20%;
 }
