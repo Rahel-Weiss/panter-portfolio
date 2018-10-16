@@ -24,14 +24,18 @@ $index = 0;
           <?php foreach ($projects as $project): ?>
             <div class="carousel-cell">
               <div class="carousel-slide">
-                <h1><?= $project->title()->html() ?></h1>
-                <p><?= $project->brief()->html() ?></p> 
+                <div class="text-container">
+                  <h1><?= $project->title()->html() ?></h1>
+                  <p><?= $project->brief()->html() ?></p> 
+                  <a><?= $project->projectlink() ?></a>
+                </div>  
+                <div class="tag-container">
               
                   <?php $tags = $project->tags()->pluck('tags', ',', true)?> 
                     <?php foreach ($tags as $tag): ?>
                       <div class="tag-box"><p><?= html($tag) ?></p></div>
                     <?php endforeach; ?>  
-              
+                </div> 
               </div>
           
             </div>  

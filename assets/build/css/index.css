@@ -294,7 +294,7 @@ h5 {
   font-size: 1.2em; }
 
 a {
-  color: orange;
+  color: #bf6941;
   text-decoration: none; }
 
 a.link-small {
@@ -349,7 +349,7 @@ body {
 
 .gallery-wrapper {
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 15vh;
   transition: width 500ms ease-in-out;
   justify-content: center; }
 
@@ -359,6 +359,13 @@ body {
 
 .main-carousel .carousel-cell {
   height: 100%;
+  width: 100%; }
+
+.carousel-cell {
+  opacity: 0; }
+
+.carousel-cell.is-selected {
+  opacity: 1;
   width: 100%; }
 
 .main-carousel .carousel-slide {
@@ -374,6 +381,13 @@ body {
   height: 75%;
   object-fit: contain; }
 
+.carousel-cell.cell-video {
+  display: flex;
+  justify-content: center; }
+
+.flickity-prev-next-button {
+  background-color: transparent; }
+
 .gallery-footer {
   display: flex;
   justify-content: center;
@@ -388,7 +402,8 @@ body {
   width: unset; }
 
 .flickity-page-dots {
-  bottom: 0; }
+  bottom: 0;
+  opacity: 0; }
 
 .drawer {
   width: 35vw;
@@ -405,7 +420,8 @@ body {
 .drawer-content {
   padding: 0 50px;
   transition: opacity 10ms linear;
-  margin-bottom: 10vh; }
+  margin-bottom: 15vh;
+  height: 100%; }
 
 .drawer-content .button {
   border: none;
@@ -428,7 +444,8 @@ body {
 
 .drawer-text {
   overflow: auto;
-  width: calc(35vw - 2 * 50px); }
+  width: calc(35vw - 2 * 50px);
+  height: calc(100% - 10vh); }
 
 .drawer button {
   background-color: transparent;
@@ -440,6 +457,10 @@ body {
 .text-carousel {
   height: 100%;
   width: 100%; }
+
+.text-carousel .flickity-viewport {
+  height: 100%;
+  background-color: transparent; }
 
 .text-carousel .carousel-slide {
   display: block;
@@ -453,7 +474,12 @@ body {
 .text-carousel .flickity-page-dots {
   opacity: 0; }
 
-.tags-container {
+.carousel-slide .text-container {
+  max-width: 70vh;
+  overflow: scroll;
+  font-size: 0.8em; }
+
+.tag-container {
   margin-top: 20%; }
 
 .tag-box {
@@ -461,9 +487,10 @@ body {
   color: white;
   text-align: center;
   width: fit-content;
-  padding: 0px 10px;
+  padding: 0px 20px;
   display: inline-block;
   font-size: 0.7em;
   margin-bottom: 10px;
   margin-right: 5px;
-  transition: all 500ms; }
+  transition: all 500ms;
+  line-height: 1rem; }

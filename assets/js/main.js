@@ -64,8 +64,14 @@ $(document).ready(() => {
     draggable: false,
     freeScroll: false
   });
+
+  var elem = document.querySelector(".main-carousel");
   const imageflkty = new Flickity(".main-carousel", {
-    asNavFor: ".text-carousel"
+    // options
+    cellAlign: "left",
+    contain: true,
+    pageDots: false,
+    draggable: false
   });
 
   imageflkty.on("change", () => {

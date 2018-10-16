@@ -2,9 +2,6 @@
   padding-top: $header-height;
   padding-bottom: $footer-height;
   transition: width 500ms ease-in-out;
-  // background-color: antiquewhite;
-  // outline: solid 10px yellow;
-  // outline-offset: -10px;
   justify-content: center;
 }
 
@@ -16,6 +13,16 @@
   height: 100%;
   width: 100%;
 }
+
+.carousel-cell {
+  opacity: 0;
+}
+
+.carousel-cell.is-selected {
+  opacity: 1;
+  width: 100%;
+}
+
 .main-carousel .carousel-slide {
   display: flex;
   justify-content: center;
@@ -29,6 +36,15 @@
   width: 75%;
   height: 75%;
   object-fit: contain;
+}
+
+.carousel-cell.cell-video {
+  display: flex;
+  justify-content: center;
+}
+
+.flickity-prev-next-button {
+  background-color: transparent;
 }
 
 .gallery-footer {
@@ -49,4 +65,5 @@
 
 .flickity-page-dots {
   bottom: 0;
+  opacity: 0;
 }

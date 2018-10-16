@@ -23,3 +23,7 @@ fields:
     label: Tags
     type: tags
     lower: true
+  projectlink:
+    label: Project URL
+    type: url
+    required: false

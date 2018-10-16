@@ -1,9 +1,18 @@
-
-<?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+<?php
+  foreach($page->files()->sortBy('sort', 'asc') as $file): ?>
+    <?php if($file->type() == 'image'): ?>
     <div data-project-index="<?= $index ?>" class="carousel-cell">
-        <div class="carousel-slide"><img class="gallery-image" src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" /></div>
+        <div class="carousel-slide"><img class="gallery-image" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" /></div>
     </div>
-<?php endforeach ?>
+    <?php endif ?>
+    <?php if($file->type() == 'video'): ?>
+        <div data-project-index="<?= $index ?>" class="carousel-cell cell-video">
+            <video autoplay="true" loop muted="" preload="auto" controls="controls" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+        </div>
+   <?php endif ?>
+  <?php endforeach ?>
+
+
 
 
 

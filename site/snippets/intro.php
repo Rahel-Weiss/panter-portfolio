@@ -14,7 +14,7 @@
           <div class="arrow-box">
             <a class="link-small scroll email" href="#start">
               <div class="contact-circle">
-                <p>Top<p>
+                <p><p>
               </div>
             </a>
             <div class="arrow">
