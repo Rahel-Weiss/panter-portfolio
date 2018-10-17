@@ -68,7 +68,6 @@ $(document).ready(() => {
 
   const imageflkty = new Flickity(".main-carousel", {
     freeScroll: true,
-    wrapAround: true,
     prevNextButtons: false,
     cellAlign: "center",
     pageDots: false,
