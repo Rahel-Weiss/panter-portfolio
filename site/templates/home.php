@@ -26,7 +26,7 @@ $index = 0;
                   <h5><a class="web-link"><?= $project->projectlink()?></a></h5>
                 </div>  
                 <div class="tag-container">  
-                  <?php $tags = $project->tags()->pluck('tags', ',', true)?> 
+                  <?php $tags = explode(',', $project->tags()); ?> 
                     <?php foreach ($tags as $tag): ?>
                       <div class="tag-box"><p><?= html($tag) ?></p></div>
                     <?php endforeach; ?>  
