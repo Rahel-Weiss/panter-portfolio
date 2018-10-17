@@ -9,6 +9,7 @@
   height: 100%;
   width: 100%;
 }
+
 .main-carousel .carousel-cell {
   height: 100%;
   width: 100%;
@@ -62,8 +63,22 @@
 .gallery-footer .drawer-close-icon {
   height: unset;
   width: unset;
+  background-color: $dark-gray;
+  padding: 0 50px;
+  color: $white;
 }
 
 .flickity-page-dots {
   bottom: 0;
+}
+
+.gallery-cell {
+  width: 100%;
+  background: #8c8;
+  color: #fff;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 2rem;
+  font-family: sans-serif;
 }

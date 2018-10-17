@@ -62,7 +62,8 @@ $(document).ready(() => {
     prevNextButtons: false,
     pageDots: false,
     draggable: false,
-    freeScroll: false
+    freeScroll: false,
+    setGallerySize: false
   });
 
   const imageflkty = new Flickity(".main-carousel", {
@@ -70,7 +71,9 @@ $(document).ready(() => {
     wrapAround: true,
     prevNextButtons: false,
     cellAlign: "center",
-    pageDots: false
+    pageDots: false,
+    imagesLoaded: true,
+    setGallerySize: false
   });
 
   imageflkty.on("change", () => {

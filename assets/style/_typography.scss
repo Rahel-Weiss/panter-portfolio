@@ -37,6 +37,11 @@ h5 {
 a {
   color: $orange;
   text-decoration: none;
+  font-family: "AvenirNext_Bold", "helvetica", sans-serif;
+}
+
+a.web-link {
+  text-transform: none;
 }
 
 a.link-small {

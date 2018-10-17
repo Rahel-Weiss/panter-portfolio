@@ -295,7 +295,11 @@ h5 {
 
 a {
   color: #bf6941;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "AvenirNext_Bold", "helvetica", sans-serif; }
+
+a.web-link {
+  text-transform: none; }
 
 a.link-small {
   letter-spacing: 0.2em;
@@ -400,10 +404,23 @@ body {
 
 .gallery-footer .drawer-close-icon {
   height: unset;
-  width: unset; }
+  width: unset;
+  background-color: #4a4a4a;
+  padding: 0 50px;
+  color: #fff; }
 
 .flickity-page-dots {
   bottom: 0; }
+
+.gallery-cell {
+  width: 100%;
+  background: #8c8;
+  color: #fff;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 2rem;
+  font-family: sans-serif; }
 
 .drawer {
   width: 35vw;

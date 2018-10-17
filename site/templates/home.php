@@ -1,8 +1,6 @@
 
 <?php
-
 $index = 0;
-
 ?>
 
 <?php snippet('header') ?>
@@ -14,34 +12,29 @@ $index = 0;
 
   <div class="drawer">
     <div class="drawer-content">
-      <section class="drawer-header">
-        
+      <section class="drawer-header"> 
         <button onclick="$bus.trigger('drawer:close')"><img class="drawer-close-icon" src="/portfolio/assets/images/cross.svg"></button>
       </section>
       <section class="drawer-text">
-
-        <div class="text-carousel carousel carousel--full-width js-flickity" >
+        <div class="text-carousel carousel" >
           <?php foreach ($projects as $project): ?>
             <div class="carousel-cell">
               <div class="carousel-slide">
                 <div class="text-container">
                   <h1><?= $project->title()->html() ?></h1>
-                  <p><?= $project->brief()->html() ?></p> 
-                  <a><?= $project->projectlink() ?></a>
+                  <p><?= $project->brief()->kirbytext() ?></p> 
+                  <h5><a class="web-link"><?= $project->projectlink()?></a></h5>
                 </div>  
-                <div class="tag-container">
-              
+                <div class="tag-container">  
                   <?php $tags = $project->tags()->pluck('tags', ',', true)?> 
                     <?php foreach ($tags as $tag): ?>
                       <div class="tag-box"><p><?= html($tag) ?></p></div>
                     <?php endforeach; ?>  
                 </div> 
-              </div>
-          
+              </div> 
             </div>  
           <?php endforeach; ?>  
         </div>
-
       </section>
     </div>
   </div>
@@ -53,7 +46,7 @@ $index = 0;
       <?php endforeach; ?>
     </div> 
   <?php endif; ?> 
-    <div class="gallery-footer"><a class="drawer-close-icon drawer-close-icon__text js-read_the_brief"><h5>Read the brief</h5></a></div>
+    <div class="gallery-footer"><a class="drawer-close-icon drawer-close-icon__text js-read_the_brief"><p>Read the brief</p></div>
   </section>
 
 
