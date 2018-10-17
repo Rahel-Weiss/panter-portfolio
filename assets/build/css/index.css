@@ -383,6 +383,7 @@ body {
 
 .carousel-cell.cell-video {
   display: flex;
+  align-items: center;
   justify-content: center; }
 
 .flickity-prev-next-button {
@@ -402,8 +403,7 @@ body {
   width: unset; }
 
 .flickity-page-dots {
-  bottom: 0;
-  opacity: 0; }
+  bottom: 0; }
 
 .drawer {
   width: 35vw;
@@ -437,7 +437,7 @@ body {
 .drawer-header {
   height: 10vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
   top: 0; }

@@ -1,5 +1,10 @@
-title: Home
-
-  deletable: false
-
-
+title: Projects
+pages:
+  template: project
+files: false
+options:
+  delete: false
+fields:
+  title:
+    label: Title
+    type: text

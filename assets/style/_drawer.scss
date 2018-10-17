@@ -35,7 +35,7 @@ $drawer-duration: 500ms;
 .drawer-header {
   height: $header-height;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
   top: 0;

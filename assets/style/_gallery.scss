@@ -40,6 +40,7 @@
 
 .carousel-cell.cell-video {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -65,5 +66,4 @@
 
 .flickity-page-dots {
   bottom: 0;
-  opacity: 0;
 }

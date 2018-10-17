@@ -65,13 +65,12 @@ $(document).ready(() => {
     freeScroll: false
   });
 
-  var elem = document.querySelector(".main-carousel");
   const imageflkty = new Flickity(".main-carousel", {
-    // options
-    cellAlign: "left",
-    contain: true,
-    pageDots: false,
-    draggable: false
+    freeScroll: true,
+    wrapAround: true,
+    prevNextButtons: false,
+    cellAlign: "center",
+    pageDots: false
   });
 
   imageflkty.on("change", () => {
@@ -82,11 +81,6 @@ $(document).ready(() => {
       textflkty.select(index);
     }
   });
-
-  // Get the image swiper Data
-  // Get the text swiper Data
-  // When we click the advance button and if it's not the same advance if it is the same do nothing
-  // When we click on the prev button if itt's not the same do go to prev, if not do nothing.
 });
 
 // Sticky Header
