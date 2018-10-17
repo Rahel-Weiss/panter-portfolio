@@ -40,7 +40,7 @@ $index = 0;
   </div>
     
   <section class="gallery-wrapper">   
-    <div class="main-carousel carousel carousel--full-width js-flickity" >
+    <div class="main-carousel carousel data-flickity-options="{ "pageDots": false, }" >
     <?php foreach ($projects as $project): ?>
       <?php snippet('project', ['page' => $project, 'index' => $index++]); ?>
       <?php endforeach; ?>

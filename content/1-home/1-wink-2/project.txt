@@ -6,7 +6,7 @@ Brief:
 
 Task: To design one small flow of the Wink app  - How a user creates a new Post.
 
-Purpose: The point of this excercise was for me to understand the importance of breaking down complex interactions into small concise user stories.
+Aim: To understand the importance of breaking down complex interactions into small concise user stories.
 
 ----
 

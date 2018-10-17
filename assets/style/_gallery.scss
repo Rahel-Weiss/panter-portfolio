@@ -17,6 +17,8 @@
 
 .carousel-cell {
   opacity: 0;
+  transition: opacity 0ms;
+  transition-delay: 20ms;
 }
 
 .carousel-cell.is-selected {

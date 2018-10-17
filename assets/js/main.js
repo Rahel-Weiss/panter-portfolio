@@ -63,16 +63,19 @@ $(document).ready(() => {
     pageDots: false,
     draggable: false,
     freeScroll: false,
-    setGallerySize: false
+    wrapAround: true,
+    selectedAttraction: 0.8,
+    friction: 1
   });
 
   const imageflkty = new Flickity(".main-carousel", {
-    freeScroll: true,
-    prevNextButtons: false,
-    cellAlign: "center",
+    freeScroll: false,
+    draggable: false,
+    wrapAround: true,
     pageDots: false,
     imagesLoaded: true,
-    setGallerySize: false
+    selectedAttraction: 0.8,
+    friction: 1
   });
 
   imageflkty.on("change", () => {

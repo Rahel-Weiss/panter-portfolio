@@ -1,4 +1,4 @@
-Title: Wash Mate - An app for all future Miele washing machines and tumble dryers
+Title: Wash Mate - An app for future Miele washing machines & tumble dryers
 
 ----
 
@@ -8,17 +8,11 @@ Problem: In Switzerland people living in inner city apartments usually share lau
 
 Solution: Miele creates a mobile app to inform all people that share a washing machine or tumble dryer if the machine is currently running and when it will become available again. Like that, people save the time of going to the basement to find out if the machine is taken.
 
-## Stories
-- A user downloads the app and connects a machine
-> 1. Scans Serial number
-> 2. Establishing Connection
-> 3. User is informed about the successful connection
-- A user can check the current state of a shared washing machine.
-> 1. User sees that the machine is running and the time left
-> 2. User sees that the machine is free
-- A user adds a second machine
-- A user deletes a machine from the list
-- (User can invite other wash mates)
+Task: 
+- Define the problem & the usage of the app. 
+- Write user stories.
+- Design the flow
+- Create a clickable prototype.
 
 ----
 
