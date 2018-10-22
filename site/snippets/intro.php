@@ -5,16 +5,16 @@
         <div class="name-and-arrow">
             <div class="name-div">
               <div class="name-circle">
-                <h1 class="name bold name-rahel">Rahel</h1>
+                <h2 class="name bold name-rahel">Panter</h2>
               </div>
               <div class="name-circle">
-                <h1 id="weiss" class=" bold name name-weiss">Weiss</h1>
+                <h2 id="weiss" class=" bold name name-weiss">Praktikum</h2>
               </div>
             </div>
           <div class="arrow-box">
             <a class="link-small scroll email" href="#start">
               <div class="contact-circle">
-                <p><p>
+                <p>RAW<p>
               </div>
             </a>
             <div class="arrow">

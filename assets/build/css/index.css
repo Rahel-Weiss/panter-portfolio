@@ -28,7 +28,6 @@
   text-align: center; }
 
 .div-section-intro h1 {
-  font-size: 1em;
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -64,8 +63,8 @@
   align-items: center;
   color: #f2f2f2;
   justify-content: center;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   opacity: 0; }
 
@@ -139,12 +138,6 @@ h1.name {
   right: 0; }
 
 /* Animation */
-@keyframes changeColorToLight {
-  0% {
-    color: #2e2e2e; }
-  100% {
-    color: #f2f2f2; } }
-
 @keyframes visable {
   0% {
     opacity: 0; }
@@ -158,8 +151,8 @@ h1.name {
     opacity: 0;
     color: #f2f2f2; }
   100% {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     opacity: 1;
     background-color: #2e2e2e; } }
 
@@ -177,15 +170,15 @@ h1.name {
 
 @keyframes changeColorToGrey {
   0% {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     color: #f2f2f2;
     opacity: 0;
     background-color: transparent;
     color: #f2f2f2; }
   100% {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     color: #2e2e2e;
     opacity: 1;
     background-color: transparent; } }
@@ -240,7 +233,7 @@ h1.name {
   opacity: 0; }
 
 .sticky .name-circle:first-child {
-  margin-left: -20px;
+  margin-left: -100px;
   animation: changeColorToGrey 1ms;
   animation-delay: 0ms;
   animation-fill-mode: forwards; }
