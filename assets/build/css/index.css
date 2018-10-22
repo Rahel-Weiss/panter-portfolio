@@ -366,9 +366,7 @@ body {
   width: 100%; }
 
 .carousel-cell {
-  opacity: 0;
-  transition: opacity 0ms;
-  transition-delay: 20ms; }
+  opacity: 0; }
 
 .carousel-cell.is-selected {
   opacity: 1;

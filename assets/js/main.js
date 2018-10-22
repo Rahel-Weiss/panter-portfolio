@@ -64,7 +64,7 @@ $(document).ready(() => {
     draggable: false,
     freeScroll: false,
     wrapAround: true,
-    selectedAttraction: 0.8,
+    selectedAttraction: 1,
     friction: 1
   });
 
@@ -74,7 +74,7 @@ $(document).ready(() => {
     wrapAround: true,
     pageDots: false,
     imagesLoaded: true,
-    selectedAttraction: 0.8,
+    selectedAttraction: 1,
     friction: 1
   });
 
