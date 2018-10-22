@@ -64,8 +64,8 @@
   align-items: center;
   color: #f2f2f2;
   justify-content: center;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   overflow: hidden;
   opacity: 0; }
 
@@ -146,8 +146,8 @@
     opacity: 0;
     color: #f2f2f2; }
   100% {
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
     opacity: 1;
     background-color: #2e2e2e; } }
 
@@ -165,15 +165,15 @@
 
 @keyframes changeColorToGrey {
   0% {
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
     color: #f2f2f2;
     opacity: 0;
     background-color: transparent;
     color: #f2f2f2; }
   100% {
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
     color: #2e2e2e;
     opacity: 1;
     background-color: transparent; } }
@@ -192,11 +192,12 @@
     padding: 0;
     justify-content: center;
     height: 80px; }
+  .arrow {
+    left: 0;
+    right: 0; }
   .contact-circle {
     opacity: 0;
     animation: 0; }
-  .name {
-    font-size: 0.7em; }
   .sticky .contact-circle {
     animation: none;
     opacity: 1;
@@ -208,8 +209,12 @@
     margin: 0 auto;
     padding-left: 50px; }
   .name-div {
-    display: flex;
-    justify-content: center; }
+    display: inline-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 0.5em; }
   .sticky.name-div {
     opacity: 0; }
   .name-and-arrow {
@@ -386,12 +391,17 @@ body {
   padding: 0 50px;
   color: #fff; }
 
+.drawer-close-icon__text.js-read_the_brief p {
+  font-family: "AvenirNext_Regular", "helvetica", sans-serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase; }
+
 .flickity-page-dots {
   bottom: 0; }
 
 .gallery-cell {
   width: 100%;
-  background: #8c8;
   color: #fff;
   height: 300px;
   text-align: center;
@@ -488,3 +498,30 @@ body {
   margin-right: 5px;
   transition: all 500ms;
   line-height: 1rem; }
+
+@media screen and (max-width: 850px) {
+  .gallery-wrapper {
+    width: 100vw;
+    padding: 50px 10px 50px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .gallery-footer {
+    height: 5vh; }
+  .main-content[data-drawer="open"] .drawer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden; }
+  .main-content[data-drawer="open"] .drawer-text {
+    width: unset; }
+  .main-content[data-drawer="open"] .drawer .flickity-slider {
+    transform: translateX(0%) !important; }
+  .main-content[data-drawer="open"] .gallery-wrapper {
+    width: 100vw; } }

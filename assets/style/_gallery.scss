@@ -67,14 +67,19 @@
   padding: 0 50px;
   color: $white;
 }
-
+.drawer-close-icon__text.js-read_the_brief p {
+  font-family: "AvenirNext_Regular", "helvetica", sans-serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
 .flickity-page-dots {
   bottom: 0;
 }
 
 .gallery-cell {
   width: 100%;
-  background: #8c8;
+
   color: #fff;
   height: 300px;
   text-align: center;

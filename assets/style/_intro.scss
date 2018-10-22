@@ -236,17 +236,14 @@
     height: 80px;
   }
 
+  .arrow {
+    left: 0;
+    right: 0;
+  }
+
   .contact-circle {
     opacity: 0;
     animation: 0;
-  }
-
-  .name {
-    font-size: 0.7em;
-  }
-
-  .name-circle {
-    $nameCircle: 100px;
   }
 
   .sticky .contact-circle {
@@ -266,8 +263,12 @@
   }
 
   .name-div {
-    display: flex;
+    display: inline-flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 0.5em;
   }
 
   .sticky.name-div {

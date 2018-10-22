@@ -4,7 +4,7 @@
 .div-section-intro h1{margin-top:0;margin-bottom:0}.background-square{background-color:#f2f2f2;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:100vh;width:100%;-webkit-animation:drawer 1s ease-in-out;animation:drawer 1s ease-in-out;-webkit-animation-delay:1s;animation-delay:1s;overflow:hidden;position:absolute}
 .name-and-arrow{display:grid;grid-template-columns:1fr;grid-template-rows:auto;margin:0;position:relative;background-color:transparent;width:100vw;max-width:800px}
 .name-div{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:start;-ms-flex-pack:start;justify-content:start;transition:opacity 1s}
-.name-circle{border-radius:50%;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;color:#f2f2f2;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:200px;height:200px;overflow:hidden;opacity:0}
+.name-circle{border-radius:50%;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;color:#f2f2f2;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:220px;height:220px;overflow:hidden;opacity:0}
 .name-circle__consecutive_animate{-webkit-animation:changeColorToLight 001ms;animation:changeColorToLight 001ms;-webkit-animation-delay:4s;animation-delay:4s}
 .name-circle:after{content:"";padding-bottom:100%;display:block}
 .name-circle:first-child{-webkit-animation:changeColorToGrey 500ms;animation:changeColorToGrey 500ms;-webkit-animation-delay:3000ms;animation-delay:3000ms;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;opacity:0}
@@ -15,19 +15,19 @@
 .contact-circle{background-color:#bf6941;height:50px;width:50px;border-radius:50%;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;color:#fff;opacity:0;-webkit-animation:visable 1ms;animation:visable 1ms;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-delay:4s;animation-delay:4s}
 @-webkit-keyframes visable{0%{opacity:0}100%{opacity:1}}@keyframes visable{0%{opacity:0}
 100%{opacity:1}}@-webkit-keyframes grow{0%{height:0;width:0;opacity:0;color:#f2f2f2}
-100%{height:200px;width:200px;opacity:1;background-color:#2e2e2e}}@keyframes grow{0%{height:0;width:0;opacity:0;color:#f2f2f2}
-100%{height:200px;width:200px;opacity:1;background-color:#2e2e2e}}@-webkit-keyframes fade{0%{opacity:1}
+100%{height:220px;width:220px;opacity:1;background-color:#2e2e2e}}@keyframes grow{0%{height:0;width:0;opacity:0;color:#f2f2f2}
+100%{height:220px;width:220px;opacity:1;background-color:#2e2e2e}}@-webkit-keyframes fade{0%{opacity:1}
 100%{opacity:0}}@keyframes fade{0%{opacity:1}100%{opacity:0}
 }@-webkit-keyframes drawer{0%{width:0}100%{width:100vw}}@keyframes drawer{0%{width:0}
-100%{width:100vw}}@-webkit-keyframes changeColorToGrey{0%{height:200px;width:200px;color:#f2f2f2;opacity:0;background-color:transparent;color:#f2f2f2}
-100%{height:200px;width:200px;color:#2e2e2e;opacity:1;background-color:transparent}
-}@keyframes changeColorToGrey{0%{height:200px;width:200px;color:#f2f2f2;opacity:0;background-color:transparent;color:#f2f2f2}
-100%{height:200px;width:200px;color:#2e2e2e;opacity:1;background-color:transparent}
+100%{width:100vw}}@-webkit-keyframes changeColorToGrey{0%{height:220px;width:220px;color:#f2f2f2;opacity:0;background-color:transparent;color:#f2f2f2}
+100%{height:220px;width:220px;color:#2e2e2e;opacity:1;background-color:transparent}
+}@keyframes changeColorToGrey{0%{height:220px;width:220px;color:#f2f2f2;opacity:0;background-color:transparent;color:#f2f2f2}
+100%{height:220px;width:220px;color:#2e2e2e;opacity:1;background-color:transparent}
 }@media only screen and (min-width:600px){.name-and-arrow{grid-template-columns:2fr 1fr;grid-template-rows:auto;padding:0 50px}
 }@media only screen and (max-width:600px){#nav.sticky .name-and-arrow{grid-template-columns:1px 1fr;position:unset;-webkit-animation:none;animation:none;padding:0;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;height:80px}
-.contact-circle{opacity:0;-webkit-animation:0;animation:0}.name{font-size:.7em}.sticky .contact-circle{-webkit-animation:none;animation:none;opacity:1;position:unset}
+.arrow{left:0;right:0}.contact-circle{opacity:0;-webkit-animation:0;animation:0}.sticky .contact-circle{-webkit-animation:none;animation:none;opacity:1;position:unset}
 .sticky .arrow-box{padding-left:0}.arrow-box{position:relative;margin:0 auto;padding-left:50px}
-.name-div{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.name-div{display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:100vw;font-size:.5em}
 .sticky.name-div{opacity:0}.name-and-arrow{margin:0 auto}}#nav.sticky{position:fixed;top:0;z-index:2;transition:background-color 100ms linear;-webkit-animation-delay:0;animation-delay:0}
 #background-square.sticky-background{-webkit-animation:none;animation:none}.clear{opacity:0}
 .sticky .name-circle{font-size:.5em;height:110px;width:110px;font-family:"AvenirNext_Bold","helvetica",sans-serif}
@@ -52,7 +52,8 @@ body{margin:0;padding:0}.main-content{height:100vh;width:100vw;display:-webkit-f
 .carousel-slide img{width:75%;height:75%;object-fit:contain}.carousel-cell.cell-video{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 .flickity-button{background:transparent}.gallery-footer{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 .flickity-button:focus{outline:0;box-shadow:none}.gallery-footer .drawer-close-icon{height:unset;width:unset;background-color:#4a4a4a;padding:0 50px;color:#fff}
-.flickity-page-dots{bottom:0}.gallery-cell{width:100%;background:#8c8;color:#fff;height:300px;text-align:center;line-height:300px;font-size:2rem;font-family:sans-serif}
+.drawer-close-icon__text.js-read_the_brief p{font-family:"AvenirNext_Regular","helvetica",sans-serif;font-size:.5rem;letter-spacing:.1rem;text-transform:uppercase}
+.flickity-page-dots{bottom:0}.gallery-cell{width:100%;color:#fff;height:300px;text-align:center;line-height:300px;font-size:2rem;font-family:sans-serif}
 .drawer{width:35vw;height:100vh;padding-top:10vh;-webkit-transform:translateY(-10vh);transform:translateY(-10vh);background-color:#f2f2f2;transition:width 500ms ease-in-out;outline-offset:-5px;position:relative;top:0;z-index:2}
 .drawer-content{padding:0 50px;transition:opacity 10ms linear;margin-bottom:15vh;height:100%}
 .drawer-content .button{border:0;border-style:unset}.drawer-close-icon{height:24px;width:24px}
@@ -64,3 +65,8 @@ body{margin:0;padding:0}.main-content{height:100vh;width:100vw;display:-webkit-f
 .text-carousel .flickity-prev-next-button{opacity:0}.text-carousel .flickity-page-dots{opacity:0}
 .carousel-slide .text-container{max-width:70vh;overflow:scroll;font-size:.8em}.tag-container{margin-top:20%}
 .tag-box{background-color:rgba(0,0,0,0.5);color:white;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;padding:0 20px;display:inline-block;font-size:.7em;margin-bottom:10px;margin-right:5px;transition:all 500ms;line-height:1rem}
+@media screen and (max-width:850px){.gallery-wrapper{width:100vw;padding:50px 10px 50px 10px;position:absolute;top:0;left:0;right:0;bottom:0}
+.gallery-footer{height:5vh}.main-content[data-drawer="open"] .drawer{width:100vw;height:100vh;position:fixed;top:0;left:0;right:0;bottom:0;overflow:hidden}
+.main-content[data-drawer="open"] .drawer-text{width:unset}.main-content[data-drawer="open"] .drawer .flickity-slider{-webkit-transform:translateX(0) !important;transform:translateX(0) !important}
+.main-content[data-drawer="open"] .gallery-wrapper{width:100vw}
+}
