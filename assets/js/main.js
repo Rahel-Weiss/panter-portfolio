@@ -42,20 +42,6 @@ $(document).ready(() => {
     );
   });
 
-  // Go to Full Screen
-
-  const arrow = document.getElementById("arrow");
-
-  arrow.onclick = function() {
-    header.classList.add("sticky");
-    arrow.classList.add("clear");
-    // backgroundSquare.classList.add("sticky-background");
-    for (let i = 0; i < nameCircles.length; i++) {
-      nameCircles[i].classList.add("animation-2");
-    }
-    contactCircle.classList.add("animation-2");
-  };
-
   // Flickity
 
   const textflkty = new Flickity(".text-carousel", {
