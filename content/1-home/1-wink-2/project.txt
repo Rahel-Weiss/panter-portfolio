@@ -4,9 +4,9 @@ Title: Wink
 
 Brief: 
 
-Task: To design one small flow of the Wink app  - How a user creates a new Post.
+Task: Design one small user flow for the Wink app which is - As a user I want to create an event and post to the newsfeed.
 
-Aim: To understand the importance of breaking down complex interactions into small concise user stories.
+Aim: To understand the importance of breaking down complex interactions into smaller concise flows.
 
 ----
 
@@ -14,4 +14,4 @@ Tags: ux,design
 
 ----
 
-Projectlink: https://thegentlewoman.co.uk/magazine
+Projectlink: 

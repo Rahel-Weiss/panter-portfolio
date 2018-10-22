@@ -31,7 +31,7 @@
 .sticky.name-div{opacity:0}.name-and-arrow{margin:0 auto}}#nav.sticky{position:fixed;top:0;z-index:2;transition:background-color 100ms linear;-webkit-animation-delay:0;animation-delay:0}
 #background-square.sticky-background{-webkit-animation:none;animation:none}.clear{opacity:0}
 .sticky .name-circle{font-size:.5em;height:110px;width:110px;font-family:"AvenirNext_Bold","helvetica",sans-serif}
-.sticky .name-circle:first-child{-webkit-animation:changeColorToGrey 1ms;animation:changeColorToGrey 1ms;-webkit-animation-delay:0ms;animation-delay:0ms;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
+#nav.sticky .name-div{opacity:0}.sticky .name-circle:first-child{-webkit-animation:changeColorToGrey 1ms;animation:changeColorToGrey 1ms;-webkit-animation-delay:0ms;animation-delay:0ms;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
 .sticky .name-circle:last-child{-webkit-animation:changeColorToGrey 1ms;animation:changeColorToGrey 1ms;-webkit-animation-delay:0ms;animation-delay:0ms;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
 .sticky>.arrow-box>.contact-circle{-webkit-animation-delay:0003ms;animation-delay:0003ms}
 .animation-2.name-circle:first-child,.animation-2.name-circle:last-child{-webkit-animation:changeToGray 1ms;animation:changeToGray 1ms;opacity:1;-webkit-animation-delay:0ms;animation-delay:0ms;color:var(--dark-gray)}
@@ -50,7 +50,7 @@ body{margin:0;padding:0}.main-content{height:100vh;width:100vw;display:-webkit-f
 .main-carousel{height:100%;width:100%}.main-carousel .carousel-cell{height:100%;width:100%}
 .carousel-cell{opacity:0}.carousel-cell.is-selected{opacity:1;width:100%}.main-carousel .carousel-slide{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;overflow:hidden;height:100%;width:100%}
 .carousel-slide img{width:75%;height:75%;object-fit:contain}.carousel-cell.cell-video{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
-.flickity-prev-next-button{background-color:transparent}.gallery-footer{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.flickity-button{background:transparent}.gallery-footer{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 .flickity-button:focus{outline:0;box-shadow:none}.gallery-footer .drawer-close-icon{height:unset;width:unset;background-color:#4a4a4a;padding:0 50px;color:#fff}
 .flickity-page-dots{bottom:0}.gallery-cell{width:100%;background:#8c8;color:#fff;height:300px;text-align:center;line-height:300px;font-size:2rem;font-family:sans-serif}
 .drawer{width:35vw;height:100vh;padding-top:10vh;-webkit-transform:translateY(-10vh);transform:translateY(-10vh);background-color:#f2f2f2;transition:width 500ms ease-in-out;outline-offset:-5px;position:relative;top:0;z-index:2}

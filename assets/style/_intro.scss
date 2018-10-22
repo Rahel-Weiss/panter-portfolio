@@ -302,6 +302,10 @@
   font-family: "AvenirNext_Bold", "helvetica", sans-serif;
 }
 
+#nav.sticky .name-div {
+  opacity: 0;
+}
+
 .sticky .name-circle:first-child {
   animation: changeColorToGrey 1ms;
   animation-delay: 0ms;
