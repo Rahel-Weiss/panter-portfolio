@@ -55,7 +55,8 @@
 
 .name-div {
   display: flex;
-  justify-content: start; }
+  justify-content: start;
+  transition: opacity 1s; }
 
 .name-circle {
   border-radius: 50%;
@@ -90,26 +91,24 @@
   animation-delay: 2s, 2500ms, 3500ms;
   animation-fill-mode: forwards; }
 
-h1.name {
-  display: inline;
-  color: inherit; }
-
 .arrow-box {
-  display: block;
-  padding-bottom: 0%;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .arrow {
+  -webkit-animation: visable 2500ms infinite;
   animation: visable 2500ms infinite;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation-delay: 4s;
   animation-delay: 4s;
   opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   position: absolute;
-  right: 0;
-  top: 150px; }
+  margin-top: 100px; }
 
 .point {
   height: 50px;
@@ -131,11 +130,7 @@ h1.name {
   opacity: 0;
   animation: visable 1ms;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
-  margin-top: 25px;
-  margin-bottom: 150px;
-  position: absolute;
-  right: 0; }
+  animation-delay: 4s; }
 
 /* Animation */
 @keyframes visable {
@@ -200,6 +195,8 @@ h1.name {
   .contact-circle {
     opacity: 0;
     animation: 0; }
+  .name {
+    font-size: 0.7em; }
   .sticky .contact-circle {
     animation: none;
     opacity: 1;
@@ -232,8 +229,13 @@ h1.name {
 .clear {
   opacity: 0; }
 
+.sticky .name-circle {
+  font-size: 0.5em;
+  height: 110px;
+  width: 110px;
+  font-family: "AvenirNext_Bold", "helvetica", sans-serif; }
+
 .sticky .name-circle:first-child {
-  margin-left: -100px;
   animation: changeColorToGrey 1ms;
   animation-delay: 0ms;
   animation-fill-mode: forwards; }
@@ -245,12 +247,6 @@ h1.name {
 
 .sticky > .arrow-box > .contact-circle {
   animation-delay: 0003ms; }
-
-#nav.light {
-  background-color: var(--white); }
-
-#nav.dark {
-  background-color: var(--light-gray); }
 
 .animation-2.name-circle:first-child,
 .animation-2.name-circle:last-child {
@@ -298,21 +294,6 @@ a.link-small {
   letter-spacing: 0.2em;
   color: var(--light-gray);
   font-size: 0.4em; }
-
-.header-wrapper {
-  top: 0;
-  width: 100vw;
-  height: 10vh;
-  background-color: transparent;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 1; }
-
-.site-header {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 50px; }
 
 body {
   margin: 0;

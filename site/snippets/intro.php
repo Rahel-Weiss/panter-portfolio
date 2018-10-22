@@ -5,10 +5,10 @@
         <div class="name-and-arrow">
             <div class="name-div">
               <div class="name-circle">
-                <h2 class="name bold name-rahel">Panter</h2>
+                <h3 class="name bold name-rahel">Panter</h3>
               </div>
               <div class="name-circle">
-                <h2 id="weiss" class=" bold name name-weiss">Praktikum</h2>
+                <h3 id="weiss" class=" bold name name-weiss">Praktikum</h3>
               </div>
             </div>
           <div class="arrow-box">
