@@ -7,7 +7,7 @@
     <?php endif ?>
     <?php if($file->type() == 'video'): ?>
         <div data-project-index="<?= $index ?>" class="carousel-cell cell-video">
-            <video autoplay muted loop controls src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+            <video id="video" onclick="this.paused?this.play():this.pause();" class="video" autoplay muted loop preload="auto" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
         </div>
    <?php endif ?>
   <?php endforeach ?>

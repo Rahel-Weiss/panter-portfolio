@@ -4,9 +4,9 @@ Title: Wash Mate - An app for Miele washing machines & tumble dryers
 
 Brief: 
 
-Problem: In Switzerland people living in inner city apartments usually share laundry facilities in the basement. A tenant has to go to the basement to see if the machine is available which is a waste of time.
+Problem: People living in inner city apartments usually share laundry facilities in the basement and tenants have to go to the basement to see if the machine is available.
 
-Solution: Miele creates a mobile app to inform people that share a washing machine or tumble dryer wether the machine is currently running and when it will become available again. This way people save the time of going to the basement to check wether the machine is in use and can manage their time around when it will become available again.
+Solution: Miele creates a mobile app to inform people who share a washing machine or tumble dryer wether the machine is currently running and when it will become available again. 
 
 Task: 
 - Define the problem & the usage of the app. 
