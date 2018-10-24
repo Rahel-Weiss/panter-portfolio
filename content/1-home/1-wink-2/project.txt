@@ -4,13 +4,15 @@ Title: Wink
 
 Brief: 
 
-Task: Design one small user flow for the Wink app which is - As a user I want to create an event and post to the newsfeed.
+Task 
+Design one small flow for the Wink app which is - As a user I want to create an event and post to the newsfeed.
 
-Aim: To understand the importance of breaking down complex interactions into smaller concise flows.
+Aim
+To understand the importance of breaking down complex applications into smaller flows.
 
 ----
 
-Tags: ux,design,sketch
+Tags: ux,design,sketch,ui design
 
 ----
 

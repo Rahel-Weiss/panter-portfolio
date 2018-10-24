@@ -385,6 +385,11 @@ body {
 .flickity-button {
   background: transparent; }
 
+.arrow {
+  fill: #4a4a4a;
+  animation: none;
+  opacity: 1; }
+
 .gallery-footer {
   display: flex;
   justify-content: center;
@@ -478,8 +483,7 @@ body {
 .text-carousel .carousel-slide {
   display: block;
   width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
 
 .text-carousel .flickity-prev-next-button {
   opacity: 0; }
@@ -529,7 +533,5 @@ body {
     overflow: hidden; }
   .main-content[data-drawer="open"] .drawer-text {
     width: unset; }
-  .main-content[data-drawer="open"] .drawer .flickity-slider {
-    transform: translateX(0%) !important; }
   .main-content[data-drawer="open"] .gallery-wrapper {
     width: 100vw; } }

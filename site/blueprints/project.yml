@@ -14,10 +14,10 @@ files:
 
 fields:
   title:
-    label: Project name
-    type: text
+    label: Project Name
+    type: textArea
   brief:
-    label: Project brief
+    label: Project Brief
     type: textArea
   tags:
     label: Tags

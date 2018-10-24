@@ -26,6 +26,9 @@ $(document).ready(() => {
 
   $readTheBrief.on("click", () => {
     $bus.trigger("drawer:toggle");
+    setTimeout(function() {
+      textflkty.resize();
+    }, 500);
   });
 
   // Smooth scrolling
@@ -67,7 +70,6 @@ $(document).ready(() => {
   imageflkty.on("change", () => {
     const element = imageflkty.selectedElement;
     const index = Number(element.dataset.projectIndex);
-
     if (textflkty.selectedIndex !== index) {
       textflkty.select(index);
     }

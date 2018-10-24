@@ -23,7 +23,10 @@ $index = 0;
                 <div class="text-container">
                   <h1><?= $project->title()->html() ?></h1>
                   <p><?= $project->brief()->kirbytext() ?></p> 
-                  <h5><a class="web-link"><?= $project->projectlink()?></a></h5>
+    
+                  <?php if ($project->projectlink()->isTrue()): ?>
+                    <h5><a class="web-link" target="_blank" href="<?= $project->projectlink()?>">Link to the project</a></h5>         
+                    <?php endif; ?> 
                 </div>  
                 <div class="tag-container">  
                   <?php $tags = explode(',', $project->tags()); ?> 

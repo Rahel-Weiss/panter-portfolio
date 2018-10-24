@@ -1,18 +1,20 @@
-Title: Wash Mate - An app for Miele washing machines & tumble dryers
+Title: Wash Mate  - An app for Miele washing machines & tumble dryers
 
 ----
 
 Brief: 
 
-Problem: People living in inner city apartments usually share laundry facilities in the basement and tenants have to go to the basement to see if the machine is available.
+Problem
+People living in inner city apartments usually share laundry facilities in the basement and tenants have to go downstairs to see if the machine is available.
 
-Solution: Miele creates a mobile app to inform people who share a washing machine or tumble dryer wether the machine is currently running and when it will become available again. 
+Solution
+Miele creates a mobile app to inform people sharing a washing machine or tumble dryer wether the machine is currently running and when it will become available again. 
 
-Task: 
-- Define the problem & the usage of the app. 
-- Write user stories.
-- Design the flow.
-- Create a clickable prototype.
+Tasks
+Define the problem & the usage of the app. 
+Write user stories.
+Design the flow.
+Create a clickable prototype.
 
 ----
 

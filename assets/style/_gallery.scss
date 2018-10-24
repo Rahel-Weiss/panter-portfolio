@@ -60,6 +60,12 @@
   background: transparent;
 }
 
+.arrow {
+  fill: $dark-gray;
+  animation: none;
+  opacity: 1;
+}
+
 .gallery-footer {
   display: flex;
   justify-content: center;
