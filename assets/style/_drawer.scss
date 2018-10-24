@@ -47,6 +47,22 @@ $drawer-duration: 500ms;
   height: calc(100% - 10vh);
 }
 
+.text-carousel {
+  .flickity-viewport {
+    width: calc(35vw - 2 * 50px);
+  }
+  .flickity-slider {
+    width: calc(35vw - 2 * 50px);
+  }
+  .carousel-cell {
+    width: calc(35vw - 2 * 50px);
+  }
+
+  .carousel-slide {
+    width: calc(35vw - 2 * 50px);
+  }
+}
+
 .drawer button {
   background-color: transparent;
   border: none;

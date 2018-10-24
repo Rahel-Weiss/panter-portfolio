@@ -1,0 +1,19 @@
+Title: CSS Animations
+
+----
+
+Brief: 
+
+Task
+Create a CSS splash page animation for a one page website.
+
+Aim
+To learn the foundations of CSS  Animations and to understand the greater possibilities for bringing 2D designs to life on screen.
+
+----
+
+Tags: css,javascript,design
+
+----
+
+Projectlink: https://cv-2.herokuapp.com/#4

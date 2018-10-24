@@ -385,7 +385,7 @@ body {
 .flickity-button {
   background: transparent; }
 
-.arrow {
+.flickity-button-icon .arrow {
   fill: #4a4a4a;
   animation: none;
   opacity: 1; }
@@ -464,6 +464,18 @@ body {
   overflow: auto;
   width: calc(35vw - 2 * 50px);
   height: calc(100% - 10vh); }
+
+.text-carousel .flickity-viewport {
+  width: calc(35vw - 2 * 50px); }
+
+.text-carousel .flickity-slider {
+  width: calc(35vw - 2 * 50px); }
+
+.text-carousel .carousel-cell {
+  width: calc(35vw - 2 * 50px); }
+
+.text-carousel .carousel-slide {
+  width: calc(35vw - 2 * 50px); }
 
 .drawer button {
   background-color: transparent;

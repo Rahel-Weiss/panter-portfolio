@@ -24,7 +24,7 @@ $index = 0;
                   <h1><?= $project->title()->html() ?></h1>
                   <p><?= $project->brief()->kirbytext() ?></p> 
     
-                  <?php if ($project->projectlink()->isTrue()): ?>
+                  <?php if ($project->projectlink() != "" ): ?>
                     <h5><a class="web-link" target="_blank" href="<?= $project->projectlink()?>">Link to the project</a></h5>         
                     <?php endif; ?> 
                 </div>  
