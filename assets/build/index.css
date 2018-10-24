@@ -69,6 +69,8 @@ body{margin:0;padding:0}.main-content{height:100vh;width:100vw;display:-webkit-f
 .text-carousel .flickity-page-dots{opacity:0}.carousel-slide .text-container{max-width:70vh;overflow:scroll;font-size:.8em}
 .tag-container{margin-top:20%}.tag-box{background-color:rgba(0,0,0,0.5);color:white;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;padding:0 20px;display:inline-block;font-size:.7em;margin-bottom:10px;margin-right:5px;transition:all 500ms;line-height:1rem}
 @media screen and (max-width:850px){.gallery-wrapper{width:100vw;position:absolute;top:0;left:0;right:0;bottom:0}
-.gallery-footer{height:5vh}.main-content[data-drawer="open"] .drawer{width:100vw;height:100vh;position:fixed;top:0;left:0;right:0;bottom:0;overflow:hidden}
+.gallery-footer{height:5vh}.text-carousel .flickity-viewport{width:calc(100vw - 2 * 50px)}
+.text-carousel .flickity-slider{width:calc(100vw - 2 * 50px)}.text-carousel .carousel-cell{width:calc(100vw - 2 * 50px)}
+.text-carousel .carousel-slide{width:calc(100vw - 2 * 50px)}.main-content[data-drawer="open"] .drawer{width:100vw;height:100vh;position:fixed;top:0;left:0;right:0;bottom:0;overflow:hidden}
 .main-content[data-drawer="open"] .drawer-text{width:unset}.main-content[data-drawer="open"] .gallery-wrapper{width:100vw}
 }

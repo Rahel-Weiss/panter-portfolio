@@ -17,6 +17,22 @@
   .gallery-footer {
     height: 5vh;
   }
+  .text-carousel {
+    .flickity-viewport {
+      width: calc(100vw - 2 * 50px);
+    }
+    .flickity-slider {
+      width: calc(100vw - 2 * 50px);
+    }
+    .carousel-cell {
+      width: calc(100vw - 2 * 50px);
+    }
+
+    .carousel-slide {
+      width: calc(100vw - 2 * 50px);
+    }
+  }
+
   .main-content {
     &[data-drawer="open"] {
       .drawer {
@@ -32,9 +48,6 @@
 
       .drawer-text {
         width: unset;
-      }
-      .drawer .flickity-slider {
-        // transform: translateX(0%) !important;
       }
 
       .gallery-wrapper {
