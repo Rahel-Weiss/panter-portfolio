@@ -29,6 +29,7 @@ $index = 0;
                     <?php endif; ?> 
                 </div>  
                 <div class="tag-container">  
+                <h1>Skills</h1>
                   <?php $tags = explode(',', $project->tags()); ?> 
                     <?php foreach ($tags as $tag): ?>
                       <div class="tag-box"><p><?= html($tag) ?></p></div>

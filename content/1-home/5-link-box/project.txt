@@ -4,14 +4,18 @@ Title: Link Box
 
 Brief: 
 
-Problem 
-Praktikants need to work independently to achieve their learning goals at Panter. Supervisors have many good suggestions of which resources could be helpful in doing so.  For each new Praktikant or Ausbildungsprogramm this process is repeated from scratch with no overlap or profit from sharing of previous people's research and findings.
+Brief
+Problem - Praktikants need to work independently to achieve their learning goals at Panter. Supervisors have many good suggestions of which resources could be helpful in doing so.  For each new Praktikant or Ausbildungsprogramm this process is repeated from scratch with no overlap or profit from sharing of previous people's research and findings.
+Solution -Create a resource management tool which defines Topics (ie. Learning goals) and allows you to allocate and prioritise appropriate links to them.
 
-Solution
-Create a resource management tool which defines Topics (ie. Learning goals) and allows you to allocate and prioritise appropriate links to them.
-
-Aim
+Task
 To learn and implement the Software design process from start to end on a small scale in order to familiarise myself with the different steps of the process and explore the various tools and skills involved.
+
+Outcome
+Collaborative product design with Tugce
+Weekly design iterations/improvements and feedback with Sevi
+Insight into Agile & Scrum procedures
+Learning about the process of handing over designs to development team -working with Roger.
 
 ----
 

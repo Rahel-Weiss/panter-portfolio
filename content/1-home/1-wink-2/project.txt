@@ -4,11 +4,14 @@ Title: Wink
 
 Brief: 
 
-Task 
-Design one small flow for the Wink app which is - As a user I want to create an event and post to the newsfeed.
+Brief
+To design screens for 1 user story  *'Create new post'* on the wink news feed.
 
-Aim
-To understand the importance of breaking down complex applications into smaller flows.
+Task
+To understand the importance of breaking down complex applications into small user stories.
+
+Outcome
+A clickable prototype made with Sketch.
 
 ----
 

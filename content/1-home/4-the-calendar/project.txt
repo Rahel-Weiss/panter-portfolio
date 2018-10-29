@@ -4,11 +4,20 @@ Title: The Campaign-Calendar with Gabriella
 
 Brief: 
 
-The Calendar brief was to create a marketing tool that could be used to reveal content to an audience over a period of time – for example an advent calendar. 
+Brief
+Create a marketing tool that could be used to reveal content to an audience over a period of time – for example an advent calendar. 
 
-Considering my lack of enthusiasm for the obligatory celebration commonly referred to as Christmas and the limited resources available I decided instead to create a calendar to celebrate the lead up to International Womans Day. 
+Task
+Design the calendar
+Implement the design with frontend tools - CSS & Javascript
+Collaboration with Gabriella to produce the final product.
 
-Each day would reveal one inspirational female from history and a link to further investigate her achievements.
+Outcome
+Gabriella built the structure with React & connected to Magnolia CMS.
+I applied my css and javascript learnings to implement the frontend
+
+Next Steps
+Data structure is already in place by Gabriella but front end needs to be added so that the squares which have been revealed show a portrait of the woman behind it. The end result would be a line up of faces similar to a class portrait show ing all the woman featured.
 
 ----
 

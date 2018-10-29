@@ -290,6 +290,9 @@ h5 {
   font-family: "AvenirNext_Bold", "helvetica", sans-serif;
   font-size: 1.2em; }
 
+p {
+  font-size: 0.8em; }
+
 a {
   color: #bf6941;
   text-decoration: none;
@@ -302,6 +305,14 @@ a.link-small {
   letter-spacing: 0.2em;
   color: var(--light-gray);
   font-size: 0.4em; }
+
+h1 {
+  font-size: 1em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em; }
+
+.drawer-close-icon__text p {
+  font-size: 1em; }
 
 body {
   margin: 0;
@@ -508,8 +519,7 @@ body {
 
 .carousel-slide .text-container {
   max-width: 70vh;
-  overflow: scroll;
-  font-size: 0.8em; }
+  overflow: scroll; }
 
 .tag-container {
   margin-top: 20%; }
